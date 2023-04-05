@@ -1,20 +1,121 @@
+
 body{
-    background-image:url('https://i.pinimg.com/originals/02/7b/fb/027bfbd3151ad3e3141cd60e97e2d293.jpg'); 
-    
+    background-image:url("map.jpg");
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+
+div{
+    text-align: center;
 }
 
 table{
-    border-spacing:5px; 
-    text-align: center; 
-    display: inline-block; 
-    background-image:url('https://kartinkin.net/uploads/posts/2021-03/thumbs/1616973065_34-p-utkonos-oboi-35.jpg');
+    border-spacing:5px;
+    text-align: center;
+    display: inline-block;
+    background-image:url('M_kozlovsky.jpg');
+    background-repeat: round
+
 }
 
-.classic{
-    
+td{
+    font-size: 45px;
+    font-style: italic;
+    font-family: Verdana, Geneva, sans-serif;
+    color:cornsilk;
+    text-align: center;
+    width: 14px;
+    -webkit-text-stroke: 0.04em #16009e;
+}
+
+blockquote{
+    background-color: rgb(222, 184, 135);
+    font-family:monospace;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 90%;
+    -webkit-text-stroke: 0.01em #d40000
+}
+
+h1{    background-color: rgba(222, 184, 135, 0);
+
+    font-family:monospace;
+    font-size: 23px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #d40000
+}
+
+p{
+    background-color: rgba(222, 184, 135, 0.8);
+    opacity: 90%;
+    font-family:monospace;
+    text-align: left;
+    font-size: 19px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #0040a1
+
+}
+
+form{
+    border: 2px solid #006440;
+    background-color: rgba(222, 184, 135, 0.74);
+
+
+}
+
+.tabHead{
+    height:12px;
+    color:crimson;
+    font-size:23px;
+    background-color:cornsilk;
+    opacity:80%
     }
 
-#id_element{
-    
+.backgroundOfPage{
+    background-image:url("map.jpg");
+    opacity: 76%;
+    margin: 50px;
+    background-repeat: repeat;
+}
+
+
+.container{
+    width: 1100px;
+}
+
+.simbols{
+    text-align: center;
+}
+
+.rowSpaces{
+    width:20px;
+    background-color:darkgreen;
+    opacity:30%
+}
+
+.rowLines{
+    height:23px;
+    background-color:darkgreen;
+    opacity:30%;
+}
+
+.tableYourName{
+    font-size: 23px;
+    font-style: italic;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: aqua ;
+    color:cornsilk;
+    text-align: center;
+    -webkit-text-stroke: 0.04em #16009e;
+
+}
+
+#userNameForm{
+    width: 300px;
+    height: 33px;
+    font-size: 15px;
+    text-align: center;
+    background-color: cornsilk;
     }
 
