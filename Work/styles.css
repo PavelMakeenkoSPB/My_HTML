@@ -38,7 +38,6 @@ blockquote {
 
 h1 {
     background-color: rgba(222, 184, 135, 0);
-
     font-family: monospace;
     font-size: 23px;
     font-style: italic;
@@ -104,7 +103,6 @@ form {
     text-align: center;
     background-color: rgba(0, 255, 43, 0);
     -webkit-text-stroke: 0.06em #16009e;
-    value: ♥;
 }
 
 .buttonGladToSeeYou {
