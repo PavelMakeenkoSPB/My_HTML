@@ -6,14 +6,20 @@ body {
 
 div {
     text-align: center;
+    width: 450px;
+    margin-left:150px
 }
 
 table {
-    border-spacing: 6px;
+    border-spacing: 5px;
     text-align: center;
     display: inline-block;
     background-image: url("pic/fon.jpg");
     background-repeat: round;
+    border: 10px;
+    width: 256px;
+    margin-top: 25px;
+    margin-left: -42px;
 
 }
 
@@ -28,14 +34,16 @@ td {
 }
 
 blockquote {
+    
     border: 2px solid #006440;
-    background-color: rgb(222, 184, 135);
+    border-radius: 20px;
+    background-image: url("pic/paper.jpg");
     font-family: monospace;
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
-    opacity: 90%;
-    -webkit-text-stroke: 0.01em #d40000;
-    margin: 20px 20px 10px 10px;
+    opacity: 99%;
+    margin: -95px 0px 33px 429px;
+    width: 493px;
 }
 
 h1 {
@@ -47,7 +55,7 @@ h1 {
 }
 
 p {
-    background-color: rgba(222, 184, 135, 0.8);
+   
     opacity: 90%;
     font-family: monospace;
     text-align: left;
@@ -59,15 +67,17 @@ p {
 
 form {
     border: 2px solid #006440;
-    background-color: rgba(222, 184, 135, 0.89);
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url("pic/paper.jpg")
 }
 
 .tabHead {
     height: 37px;
-    color: crimson;
-    font-size: 21px;
+    color: rgba(250, 244, 0, 0.95);
+    font-size: 23px;
     background-color: cornsilk;
-    opacity: 80%;
+    opacity: 85%;
 }
 
 .backgroundOfPage {
@@ -122,10 +132,27 @@ form {
     text-shadow:1px 1px 2px black;
 }
 
+.centering{
+    margin-left: 250px;
+}
+
+.lefSide{
+    margin-left: -150px;
+}
+
 #userNameForm {
     width: 300px;
     height: 33px;
     font-size: 15px;
     text-align: center;
     background-color: cornsilk;
+}
+
+.rightSide {
+    width: 299px;
+    margin-left:319px;
+    margin-top: -543px;
+}
+
+
 }
