@@ -18,8 +18,8 @@ table {
     background-repeat: round;
     border: 10px;
     width: 256px;
-    margin-top: 25px;
-    margin-left: -42px;
+    margin-top: 4px;
+    margin-left: 377px;
 
 }
 
@@ -34,7 +34,7 @@ td {
 }
 
 blockquote {
-    
+
     border: 2px solid #006440;
     border-radius: 20px;
     background-image: url("pic/paper.jpg");
@@ -55,7 +55,7 @@ h1 {
 }
 
 p {
-   
+
     opacity: 90%;
     font-family: monospace;
     text-align: left;
@@ -137,7 +137,15 @@ form {
 }
 
 .lefSide{
-    margin-left: -150px;
+    width: 400px;
+    margin-left: -41px;
+margin-top: -265px;
+}
+
+
+.rightCorner{
+margin-top: 10px;
+margin-left: 49x;
 }
 
 #userNameForm {
@@ -149,10 +157,14 @@ form {
 }
 
 .rightSide {
-    width: 299px;
-    margin-left:319px;
-    margin-top: -543px;
+
+    width: 266px;
+    margin-left:375px;
+    margin-top: -333px;
 }
 
-
+.topRight{
+    width: 400px;
+    margin-left: 697px;
+    margin-top: -17px;
 }
