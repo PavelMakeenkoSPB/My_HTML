@@ -1,0 +1,215 @@
+1681232896031	geckodriver	INFO	Listening on 127.0.0.1:52997
+1681232898976	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52998" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileD2ovHA"
+1681232900842	Marionette	INFO	Marionette enabled
+1681232900862	Marionette	INFO	Listening on port 53013
+Read port: 53013
+WebDriver BiDi listening on ws://127.0.0.1:52998
+1681232901122	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileD2ovHA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52998/devtools/browser/a7ad9058-7143-4835-8c04-f3333eb3ce17
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.passport.yandex.ru."
+1681232905655	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1681232905883	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 13: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1681232909788	Marionette	INFO	Stopped listening on port 53013
+!!! error running onStopped callback: TypeError: callback is not a function
+1681232932552	geckodriver	INFO	Listening on 127.0.0.1:53082
+1681232935531	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileGcBz60"
+1681232936367	Marionette	INFO	Marionette enabled
+1681232936377	Marionette	INFO	Listening on port 53092
+Read port: 53092
+WebDriver BiDi listening on ws://127.0.0.1:53083
+1681232936557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileGcBz60\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53083/devtools/browser/e74f82e8-8b32-47ed-b4e1-968f9b62c0a4
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 13: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1681232946061	Marionette	INFO	Stopped listening on port 53092
+!!! error running onStopped callback: TypeError: callback is not a function
+1681232977988	geckodriver	INFO	Listening on 127.0.0.1:53145
+1681232980913	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53146" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilerO2GaC"
+1681232981699	Marionette	INFO	Marionette enabled
+1681232981708	Marionette	INFO	Listening on port 53156
+Read port: 53156
+WebDriver BiDi listening on ws://127.0.0.1:53146
+1681232981871	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilerO2GaC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53146/devtools/browser/e3013554-0774-4824-a564-03ca7173d829
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 13: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1681232989669	Marionette	INFO	Stopped listening on port 53156
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233245020	geckodriver	INFO	Listening on 127.0.0.1:53288
+1681233248095	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53289" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileAUFU3f"
+1681233248889	Marionette	INFO	Marionette enabled
+1681233248897	Marionette	INFO	Listening on port 53298
+Read port: 53298
+WebDriver BiDi listening on ws://127.0.0.1:53289
+1681233249059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileAUFU3f\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53289/devtools/browser/27438c22-049b-43af-889f-6675d50fe446
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 13: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1681233255983	Marionette	INFO	Stopped listening on port 53298
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233593766	geckodriver	INFO	Listening on 127.0.0.1:53392
+1681233596722	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileMf0Idi"
+1681233597513	Marionette	INFO	Marionette enabled
+1681233597522	Marionette	INFO	Listening on port 53402
+Read port: 53402
+WebDriver BiDi listening on ws://127.0.0.1:53393
+1681233597683	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileMf0Idi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53393/devtools/browser/8df92654-417d-4a69-953e-d51eb77bbafa
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681233617192	Marionette	INFO	Stopped listening on port 53402
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233617284	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+observe()@resource://gre/modules/AsyncShutdown.jsm:576
+1681233650935	geckodriver	INFO	Listening on 127.0.0.1:53461
+1681233653906	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53462" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileRllQkF"
+1681233654750	Marionette	INFO	Marionette enabled
+1681233654759	Marionette	INFO	Listening on port 53471
+Read port: 53471
+WebDriver BiDi listening on ws://127.0.0.1:53462
+1681233654924	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileRllQkF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53462/devtools/browser/769cfd8f-27d7-4669-b8e9-075edc4faff8
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681233668558	Marionette	INFO	Stopped listening on port 53471
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233668658	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+observe()@resource://gre/modules/AsyncShutdown.jsm:576
+1681233683276	geckodriver	INFO	Listening on 127.0.0.1:53523
+1681233686239	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53524" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofiled1fyJ0"
+1681233687068	Marionette	INFO	Marionette enabled
+1681233687076	Marionette	INFO	Listening on port 53533
+Read port: 53533
+WebDriver BiDi listening on ws://127.0.0.1:53524
+1681233687269	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofiled1fyJ0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53524/devtools/browser/a6e3dc95-67d6-43f3-a6b4-759ef3f82a16
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681233697870	Marionette	INFO	Stopped listening on port 53533
+1681233721876	geckodriver	INFO	Listening on 127.0.0.1:53582
+1681233724821	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileZnAXNe"
+1681233725724	Marionette	INFO	Marionette enabled
+1681233725733	Marionette	INFO	Listening on port 53592
+Read port: 53592
+WebDriver BiDi listening on ws://127.0.0.1:53583
+1681233725960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileZnAXNe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53583/devtools/browser/072816c4-1d89-478f-a059-21a62c9ddf09
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1681233767924	Marionette	INFO	Stopped listening on port 53592
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233767979	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+1681233826893	geckodriver	INFO	Listening on 127.0.0.1:53641
+1681233829982	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53642" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilevXGIS9"
+1681233830770	Marionette	INFO	Marionette enabled
+1681233830779	Marionette	INFO	Listening on port 53651
+Read port: 53651
+WebDriver BiDi listening on ws://127.0.0.1:53642
+1681233830950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilevXGIS9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53642/devtools/browser/23324b38-7dac-42b0-84f3-56b26d8bd90b
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1681233843846	Marionette	INFO	Stopped listening on port 53651
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233914830	geckodriver	INFO	Listening on 127.0.0.1:53734
+1681233917874	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53735" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilezqNCWN"
+1681233918671	Marionette	INFO	Marionette enabled
+1681233918680	Marionette	INFO	Listening on port 53744
+Read port: 53744
+WebDriver BiDi listening on ws://127.0.0.1:53735
+1681233918847	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilezqNCWN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53735/devtools/browser/97e02428-31ae-413e-95fb-8ff6edfac468
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681233934448	Marionette	INFO	Stopped listening on port 53744
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681233934534	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+observe()@resource://gre/modules/AsyncShutdown.jsm:576
+1681237079826	geckodriver	INFO	Listening on 127.0.0.1:55955
+1681237082906	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55956" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilejS3qV7"
+1681237083812	Marionette	INFO	Marionette enabled
+1681237083822	Marionette	INFO	Listening on port 55965
+Read port: 55965
+WebDriver BiDi listening on ws://127.0.0.1:55956
+1681237084002	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilejS3qV7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55956/devtools/browser/06e132ca-b0a4-41aa-ab7c-0e118a0d294d
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681237095708	Marionette	INFO	Stopped listening on port 55965
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681237095797	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+observe()@resource://gre/modules/AsyncShutdown.jsm:576
+1681237101216	geckodriver	INFO	Listening on 127.0.0.1:56016
+1681237104296	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileTCtG1x"
+1681237105114	Marionette	INFO	Marionette enabled
+1681237105122	Marionette	INFO	Listening on port 56026
+Read port: 56026
+WebDriver BiDi listening on ws://127.0.0.1:56017
+1681237105296	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileTCtG1x\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56017/devtools/browser/98bd0b5f-10e2-48c9-94be-9470fb4e3cc0
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681237147495	Marionette	INFO	Stopped listening on port 56026
+[Parent 21300, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+--remote-debugging-port" "56077" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileHITGmw"
+1681237136758	Marionette	INFO	Marionette enabled
+1681237136767	Marionette	INFO	Listening on port 56086
+Read port: 56086
+WebDriver BiDi listening on ws://127.0.0.1:56077
+1681237136927	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileHITGmw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56077/devtools/browser/6d2e739f-58d2-4784-a9a1-9668c8c161cf
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1681237145917	Marionette	INFO	Stopped listening on port 56086
+JavaScript error: chrome://remote/content/marionette/cert.js, line 57: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1681237146097	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.js :: allowAllCerts.disable :: line 57"  data: no] Stack trace: allowAllCerts.disable()@cert.js:57
+destroy()@Session.jsm:206
+deleteSession()@WebDriverBiDi.jsm:148
+stop()@WebDriverBiDi.jsm:227
+observe()@resource://gre/modules/AsyncShutdown.jsm:576
+1681237153925	geckodriver	INFO	Listening on 127.0.0.1:56137
+1681237156989	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56138" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilev49Ueh"
+1681237157868	Marionette	INFO	Marionette enabled
+1681237157877	Marionette	INFO	Listening on port 56147
+Read port: 56147
+WebDriver BiDi listening on ws://127.0.0.1:56138
+1681237158041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofilev49Ueh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56138/devtools/browser/cd7d1ace-cc24-47b3-9bb4-c9a83f1303c5
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1681237171236	Marionette	INFO	Stopped listening on port 56147
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBDatabase::Msg_PBackgroundIDBTransactionConstructor Value error: message was deserialized, but contained an illegal value
+
