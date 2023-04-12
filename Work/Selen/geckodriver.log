@@ -213,3 +213,5 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 
 ###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBDatabase::Msg_PBackgroundIDBTransactionConstructor Value error: message was deserialized, but contained an illegal value
 
+1681291031757	geckodriver	INFO	Listening on 127.0.0.1:53081
+1681291034845	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53082" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\makeenko\\AppData\\Local\\Temp\\rust_mozprofilebSMPEn"
