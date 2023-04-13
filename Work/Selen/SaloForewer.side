@@ -1,0 +1,220 @@
+{
+  "id": "1bb94d4d-41ee-4a02-90a8-41714d3e2d76",
+  "version": "2.0",
+  "name": "SaloForewer",
+  "url": "https://quest-book.ru",
+  "tests": [{
+    "id": "66bee41a-8108-48da-a365-61c493dc07f2",
+    "name": "first",
+    "commands": [{
+      "id": "3282bfa6-e31b-4400-8115-e14f86e86711",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fb2c34f-69d8-4398-a949-dac9365fb0f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1418x939",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "459959e2-64eb-4d02-a6ce-56205d6f61ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6:nth-child(1) > div > img",
+      "targets": [
+        ["css=.col-6:nth-child(1) > div > img", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f794dae8-aace-4275-8b7e-b58618f83c81",
+      "comment": "",
+      "command": "click",
+      "target": "id=more_5story",
+      "targets": [
+        ["id=more_5story", "id"],
+        ["css=#more_5story", "css:finder"],
+        ["xpath=//button[@id='more_5story']", "xpath:attributes"],
+        ["xpath=//div[@id='sglistBest']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21d8b86a-79bb-4879-9618-4f08ee4476f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#best-books > .game_info:nth-child(2) .h-75",
+      "targets": [
+        ["css=#best-books > .game_info:nth-child(2) .h-75", "css:finder"],
+        ["xpath=//div[@id='best-books']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/directory/legend_of_the_shadowwarriors')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/div/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b388c5c-1406-478a-ab00-ba2359ef99e6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#best-books > .game_info:nth-child(2) .h-75",
+      "targets": [
+        ["css=#best-books > .game_info:nth-child(2) .h-75", "css:finder"],
+        ["xpath=//div[@id='best-books']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/directory/legend_of_the_shadowwarriors')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/div/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2ea03c-1aa7-46f1-a48b-f11f55e82d43",
+      "comment": "",
+      "command": "click",
+      "target": "css=#best-story > .game_info:nth-child(1) .h-75",
+      "targets": [
+        ["css=#best-story > .game_info:nth-child(1) .h-75", "css:finder"],
+        ["xpath=//div[@id='best-story']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/online/view/game4192/')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd65cf8-ff34-489a-b3db-16bed3897606",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ЧАВО",
+      "targets": [
+        ["linkText=ЧАВО", "linkText"],
+        ["css=.col-6:nth-child(2) > .nav-link:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'ЧАВО')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/forum/topic/4285')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,' ЧАВО')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "973e4061-0a20-4f3e-8195-780014b83158",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) .d-inline",
+      "targets": [
+        ["css=.nav-item:nth-child(4) .d-inline", "css:finder"],
+        ["xpath=//div[@id='navbarToggler']/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e6779044-983f-4a91-b2e0-61949b8a9495",
+    "name": "second",
+    "commands": [{
+      "id": "859a95a4-17c8-4b33-b5c2-27bad49d528a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5683be62-ec66-42b3-84f8-06f65282d837",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1418x939",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26a07d33-4101-417f-b1c6-bdf5d42a52ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.container-fluid:nth-child(3) .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/online/')])[4]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "722ef4ac-1486-491e-bb69-0248ff261aa7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .game_info:nth-child(5) .h-75",
+      "targets": [
+        ["css=.row:nth-child(1) > .game_info:nth-child(5) .h-75", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/div/div[5]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'view/ice_and_flower')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8ee8f8a-7e95-4af0-96f9-78ed1bb4c09f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,700)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce2e1f06-d9ae-4249-9521-22c459b55797",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=все сторигеймы автора",
+      "targets": [
+        ["linkText=все сторигеймы автора", "linkText"],
+        ["css=div:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'все сторигеймы автора')]", "xpath:link"],
+        ["xpath=//div[@id='content-wrap']/div/div/div[8]/table/tbody/tr/td[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/online/list/author/?id=15001')]", "xpath:href"],
+        ["xpath=//td[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'все сторигеймы автора')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2f476a-a49f-4dd1-9cb0-aa112bca3aac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game_info:nth-child(2) .h-75",
+      "targets": [
+        ["css=.game_info:nth-child(2) .h-75", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/online/view/pawn')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35be082-988e-478f-b189-2f044b71ef85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-play-circle-o",
+      "targets": [
+        ["css=.fa-play-circle-o", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "280c9475-1404-4067-9d00-d4ddf0a2b7fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close-btn > .btn",
+      "targets": [
+        ["css=.close-btn > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='motivationDialog']/div/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c6cf2bee-7a6f-4318-b53b-28739c53ae3f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["66bee41a-8108-48da-a365-61c493dc07f2"]
+  }],
+  "urls": ["https://quest-book.ru/"],
+  "plugins": []
+}
