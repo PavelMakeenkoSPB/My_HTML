@@ -15,21 +15,26 @@ def main():
     options.add_argument("--test-type")    
     browser = webdriver.Chrome()
     browser.maximize_window()    
-    browser.get('file:///C:/temp/QA/Git/My_HTML/Work/first.html')
+    browser.get('file:/D:/Program Files (x86)/Git/HTML/Work/Selen/first.html')
     browser.delete_all_cookies()
-    timer = browser.find_element(By.XPATH, '//*[@id="start"]').click()
+    #timer = browser.find_element(By.XPATH, '//*[@id="start"]').click()
+
+
 
     try:
 
-        element = WebDriverWait(browser, 50).until(
+        element = WebDriverWait(browser, 40).until(
             EC.presence_of_element_located((By.ID, "myDynamicElement"))
         )
     except:
         numb = browser.find_element(By.XPATH, '//*[@name="btn"]').click()
     try:
-        elem = WebDriverWait(driver, 60).until(lambda driver: driver.execute_script("return document.readyState").equals("complete"))
+        elem = WebDriverWait(driver, 10).until(lambda driver: driver.execute_script("return document.readyState").equals("complete"))
+        
 
     except:
+        #numb = browser.find_element(By.XPATH, '//*[@name="btn"]').click()
         browser.quit()
-        print('FINE')
+        print('Test Is Successful!!')
 main()
+

@@ -51,7 +51,7 @@ h1 {
 
 .run{
     margin-top: 42px;
-background-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 #start {
@@ -66,10 +66,7 @@ background-color: antiquewhite;
     background-color: #c91400;
 }
 
-#reset {
-    background-color: #c91400;
-}
-
 #run {
     background-color: #8c008e;
+    width: 400px;
 }
