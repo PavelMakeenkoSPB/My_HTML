@@ -200,6 +200,13 @@
         ["xpath=//h3[contains(.,'World of Tanks — Легендарная онлайн-игра про танки')]", "xpath:innerText"]
       ],
       "value": "World of Tanks — Легендарная онлайн-игра про танки"
+    }, {
+      "id": "12ee66f5-68d9-4cb8-855c-fa735771e702",
+      "comment": "Закрыть окно браузера",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
