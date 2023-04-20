@@ -83,7 +83,7 @@
       "value": ""
     }, {
       "id": "f86b3203-1ee8-4e94-b529-12b68cb73090",
-      "comment": "Ввод запроса \"world of \"",
+      "comment": "Ввод запроса \"world of t\"",
       "command": "type",
       "target": "id=APjFqb",
       "targets": [
@@ -94,7 +94,7 @@
         ["xpath=//form[@id='tsf']/div/div/div[2]/div/div[2]/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "world of"
+      "value": "world of t"
     }, {
       "id": "1d9862f3-f5e1-4158-b939-e992b8fa66e8",
       "comment": "Наличие картинки в первом пункте списка",
@@ -136,23 +136,23 @@
       "value": "amountOfHints"
     }, {
       "id": "427d5834-2b5a-437a-977b-a7bdbcc5e661",
-      "comment": "Вывод в консоль количества подсказок(3)",
+      "comment": "Вывод в консоль количества подсказок(6)",
       "command": "echo",
       "target": "Количество элементов ==> ${amountOfHints}",
       "targets": [],
       "value": ""
     }, {
       "id": "2d17ee01-c3c9-4f80-8de0-9c46b604763d",
-      "comment": "Проверка, что количество подсказок - 3",
+      "comment": "Проверка, что количество подсказок - 6",
       "command": "assert",
       "target": "amountOfHints",
       "targets": [],
-      "value": "3"
+      "value": "6"
     }, {
       "id": "3d1579a0-6e83-4d22-8edb-73c84011d93b",
       "comment": "Наличие текста \"Онлайн-игра\"",
       "command": "assertText",
-      "target": "css=#Zrbbw > .ClJ9Yb > span",
+      "target": "xpath=//span[contains(.,'Онлайн-игра')]",
       "targets": [
         ["css=#Zrbbw > .ClJ9Yb > span", "css:finder"],
         ["xpath=//div[@id='Zrbbw']/div[2]/span", "xpath:idRelative"],
