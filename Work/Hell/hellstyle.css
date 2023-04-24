@@ -1,5 +1,255 @@
 body {
-    background-image: url("pic/fonbaby.jpg");
+    background-image: url("pic/fonbaby1.jpg");
     margin: 50px;
-    background-repeat: repeat;
+    background-attachment: fixed
+
+}
+
+body > div:nth-child(8) > img:nth-child(5){
+margin-left: 0;
+margin-top: 0;
+}
+
+body > div:nth-child(8) > img:nth-child(4){
+
+}
+
+table, p ,h2{
+    background-image: url("pic/paper.jpg");
+    text-align: center;
+    border-spacing: 5px;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(38, 39, 220);
+    text-align: left;
+    border: 2px solid #006440;
+    border-radius: 20px;
+    background-image: url("pic/paper.jpg");
+    height: auto;
+    width: 1260px;
+    background-color: rgba(222, 184, 135, 0);
+    font-family: sans-serif;
+    padding-top:5px;
+    padding-left: 10px;
+}
+
+
+
+body > div:nth-child(8) > p:nth-child(2){
+    height: auto;
+    width: 250px;
+}
+
+body > div:nth-child(8) > p:nth-child(3){
+    background-color: rgba(222, 184, 135, 0);
+    width: 1170px;
+    font-family: monospace;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+body > div:nth-child(8) > p:nth-child(4){
+    height: auto;
+    width: 350px;
+    margin-top: -360px;
+    margin-left: 820px;
+}
+
+body > div:nth-child(8) > p:nth-child(5){
+    height: auto;
+    width: 350px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+body > div:nth-child(8) > p:nth-child(6){
+    height: auto;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 820px;
+}
+
+body > div:nth-child(8) > p:nth-child(7){
+    height: auto;
+    width: 550px;
+    margin-top: 100px;
+}
+
+body > div:nth-child(9) > h2{
+    height: auto;
+    width: 1200px;
+    margin-top: 300px;
+}
+
+body > div:nth-child(8) > h1{
+    background-color: rgba(222, 184, 135, 0);
+    font-family: monospace;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 420px;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+body > h1{
+    background-color: rgba(222, 184, 135, 0);
+    font-family: monospace;
+    font-size: 50px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+body > div:nth-child(9) > h2{
+    background-image: url("pic/paper.jpg");
+    border-spacing: 5px;
+    font-size: 18px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(220, 38, 38);
+    text-align: left;
+    width: 1250px;
+
+}
+
+body > div:nth-child(10){
+    margin-top: -330px;
+    margin-left: 200px;
+}
+
+blockquote{
+    height: 100px;
+    width: 400px;
+    margin-top: -124px;
+    margin-left: 212px;
+    background-image: url("pic/paper.jpg");
+    border: 2px solid #006440;
+    border-radius: 20px;
+    border-spacing: 5px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    padding-top:5px;
+    padding-left: 10px;
+}
+
+body > div:nth-child(11){
+    margin-top: 150px;
+    margin-left: 300px;
+}
+body > div:nth-child(12) > p{
+    width: 1253px;
+margin-top: 80px;
+}
+
+body > div:nth-child(14){
+    background-image: url("pic/paper.jpg");
+    width:400px;
+    height: auto;
+    border: 2px solid #006440;
+    border-radius: 20px;
+    border-spacing: 5px;
+    margin-top: 50px;
+    margin-left: 450px;
+    text-align: center;
+    border-spacing: 5px;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(254, 32, 32);
+    text-align: left;
+    font-family: sans-serif;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:10px;
+
+}
+body > div:nth-child(15){
+    background-image: url("pic/paper.jpg");
+    width:400px;
+    height: auto;
+    border: 2px solid #006440;
+    border-radius: 20px;
+    border-spacing: 5px;
+    margin-top: -805px;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(254, 32, 32);
+    text-align: left;
+    font-family: sans-serif;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+h3{
+    font-size: 26px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(220, 38, 38);
+    text-align: center;
+}
+body > div:nth-child(16){
+    background-image: url("pic/paper.jpg");
+    width:399px;
+    height: auto;
+    border: 2px solid #006440;
+    border-radius: 20px;
+    border-spacing: 5px;
+    margin-top: -675px;
+    margin-left: 900px;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(254, 32, 32);
+    text-align: left;
+    font-family: sans-serif;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+body > div:nth-child(17){
+    background-image: url("pic/paper.jpg");
+    width:600px;
+    height: auto;
+    border: 2px solid #006440;
+    border-radius: 20px;
+    border-spacing: 5px;
+    margin-top: 190px;
+    margin-left: 360px;
+    font-size: 20px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(254, 32, 32);
+    text-align: left;
+    font-family: sans-serif;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+body > div:nth-child(17) > form > p > input[type=submit]:nth-child(22){
+    font-size: 26px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(220, 38, 38);
+    text-align: center;
+margin-top: 2px;
+margin-bottom: 10px;
+margin-left: 200px;
+}
+body > div:nth-child(14) > form > input[type=submit]:nth-child(2){
+    font-size: 26px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(220, 38, 38);
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 102px;
+}
+body > div:nth-child(14) > form > input[type=range]:nth-child(1){
+width: 390px;
+}
+
+
+body > div:nth-child(18){
+margin-top: 50px;
+    }
+body > div:nth-child(17) > form > p{
+width: 580px;
+}
+body > div:nth-child(17) > form > p > textarea{
+width: 550px;
 }
