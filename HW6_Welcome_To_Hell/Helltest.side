@@ -2,7 +2,7 @@
   "id": "028a06a0-6dcc-46f3-8ce4-c71f8c48b263",
   "version": "2.0",
   "name": "Helltest",
-  "url": "file:///C:/temp/QA/Git/My_HTML/Work/Hell/main.html",
+  "url": "file:///C:/temp/QA/Git/My_HTML/HW6_Welcome_To_Hell/index.html",
   "tests": [{
     "id": "6f00de8c-66a4-44e2-b58f-7d01005eea9b",
     "name": "hell",
@@ -17,28 +17,22 @@
       "id": "873aaad1-0be5-4ef7-aa63-bc10629f3024",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1779x1027",
+      "target": "1400x900",
       "targets": [],
       "value": ""
     }, {
-      "id": "f8905993-859a-413c-9dc0-d78f008cb3b4",
-      "comment": "",
-      "command": "selectFrame",
-      "target": "index=0",
-      "targets": [
-        ["index=0"]
-      ],
+      "id": "0868ad39-f1e1-4aeb-a4c4-8f6d50b6c3c8",
+      "comment": "Черти",
+      "command": "waitForElementVisible",
+      "target": "xpath=/html/body/div[12]",
+      "targets": [],
       "value": ""
     }, {
       "id": "da7ed065-19e2-4adc-9ab0-3bfd695d1092",
-      "comment": "",
-      "command": "click",
-      "target": "css=.ytp-large-play-button",
-      "targets": [
-        ["css=.ytp-large-play-button", "css:finder"],
-        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div[4]/button", "xpath:position"]
-      ],
+      "comment": "Вижу святого Петра",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/div[15]",
+      "targets": [],
       "value": ""
     }, {
       "id": "bbe72164-fe7a-499e-a08b-fd7a6f4e61a4",
@@ -83,6 +77,6 @@
     "timeout": 300,
     "tests": ["6f00de8c-66a4-44e2-b58f-7d01005eea9b"]
   }],
-  "urls": ["file:///C:/temp/QA/Git/My_HTML/Work/Hell/main.html"],
+  "urls": ["file:///C:/temp/QA/Git/My_HTML/Work/Hell/main.html", "file:///C:/temp/QA/Git/My_HTML/HW6_Welcome_To_Hell/index.html"],
   "plugins": []
 }
