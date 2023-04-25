@@ -1,0 +1,49 @@
+{
+  "id": "ace212ee-aaa6-45bc-8ad7-c39ce990888e",
+  "version": "2.0",
+  "name": "HellO",
+  "url": "file://",
+  "tests": [{
+    "id": "ca8391f3-0553-4a6a-8870-4c0334d4ded4",
+    "name": "first",
+    "commands": [{
+      "id": "0eb3dddf-f4c8-4407-8f46-a3a85782924c",
+      "comment": "",
+      "command": "open",
+      "target": "/C:/Users/t.student/Documents/GitHub/My_HTML/HW6_Welcome_To_Hell/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b995bc01-dbb3-4978-a871-00da4d834734",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1418x939",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de71915a-97c5-4271-a23d-3f1734c86c2a",
+      "comment": "Наличие приветственных чертей",
+      "command": "assertElementPresent",
+      "target": "xpath=html/body/div[12]/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3c045fc-f5b8-4d5f-8b7c-db1f2ae16872",
+      "comment": "Закрыть окно",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5c230196-ec8c-41e2-b16d-e97099730f0a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ca8391f3-0553-4a6a-8870-4c0334d4ded4"]
+  }],
+  "urls": ["file:///"],
+  "plugins": []
+}
