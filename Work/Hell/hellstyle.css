@@ -261,6 +261,7 @@ width: 550px;
 body > div:nth-child(19){
     margin-top: -5610px;
     margin-left: 355px;
+
 }
 
 body > div:nth-child(20){
@@ -283,4 +284,7 @@ body > div:nth-child(23){
 body > div:nth-child(24){
     margin-top: -315px;
     margin-left: 1035px;
+}
+.container {
+    min-width: 1200px;
 }
