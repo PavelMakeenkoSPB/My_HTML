@@ -2,63 +2,27 @@
   "id": "67767713-518b-44a9-9174-c1b1136d2e27",
   "version": "2.0",
   "name": "Viva",
-  "url": "https://harmonious-conkies-f150a0.netlify.app",
+  "url": "https://resortofhelling.netlify.app/",
   "tests": [{
     "id": "636a5bda-24d4-41cc-81e3-8b7a3e127c14",
     "name": "helltesting",
     "commands": [{
       "id": "6b58f0c9-c9e0-4d05-b629-d0b2bfb7b1b4",
-      "comment": "",
+      "comment": "Открыть страницу",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
       "id": "a47f33eb-a5f5-4090-bb25-ea8f51b3111e",
-      "comment": "",
+      "comment": "Задать размер окна",
       "command": "setWindowSize",
       "target": "1761x1019",
       "targets": [],
       "value": ""
     }, {
-      "id": "a9b0692d-471b-458b-8758-f3b3561e4687",
-      "comment": "",
-      "command": "mouseDownAt",
-      "target": "name=amountMoney",
-      "targets": [
-        ["name=amountMoney", "name"],
-        ["css=input:nth-child(1)", "css:finder"],
-        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "76,3.96875"
-    }, {
-      "id": "f1eb66ad-0264-4180-ba60-556bca68c1c6",
-      "comment": "",
-      "command": "mouseMoveAt",
-      "target": "name=amountMoney",
-      "targets": [
-        ["name=amountMoney", "name"],
-        ["css=input:nth-child(1)", "css:finder"],
-        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "76,3.96875"
-    }, {
-      "id": "95ad9c27-2537-4b16-abfb-baf475e7f4ea",
-      "comment": "",
-      "command": "mouseUpAt",
-      "target": "name=amountMoney",
-      "targets": [
-        ["name=amountMoney", "name"],
-        ["css=input:nth-child(1)", "css:finder"],
-        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "76,3.96875"
-    }, {
       "id": "31fdefc2-9096-4212-8d86-a670d0830cce",
-      "comment": "",
+      "comment": "Проверить наличие заголовка страницы \"Семь Кругов Ада\"",
       "command": "verifyElementPresent",
       "target": "xpath=//h1",
       "targets": [
@@ -69,7 +33,7 @@
       "value": ""
     }, {
       "id": "bb15901e-8607-4f28-990b-d20de88e2368",
-      "comment": "",
+      "comment": "Ввести значение 800 элементом volume",
       "command": "type",
       "target": "name=amountMoney",
       "targets": [
@@ -78,22 +42,10 @@
         ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "600"
+      "value": "800"
     }, {
-      "id": "c6dca04e-f52d-4027-992e-9b93b176ee8c",
-      "comment": "",
-      "command": "click",
-      "target": "name=amountMoney",
-      "targets": [
-        ["name=amountMoney", "name"],
-        ["css=input:nth-child(1)", "css:finder"],
-        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "3a09cf7c-739f-4d04-9c7f-d32e5110ccab",
-      "comment": "",
+      "id": "4856c961-c1a4-42b5-9225-38c5cb4f1922",
+      "comment": "Нажать кнопку \"Подбросить\"",
       "command": "click",
       "target": "name=isubmit",
       "targets": [
@@ -103,6 +55,65 @@
         ["xpath=//input[2]", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "4d5c6180-1ca1-4963-b932-38f988ae4e28",
+      "comment": "Ввести Имя в форму",
+      "command": "type",
+      "target": "name=hisname",
+      "targets": [
+        ["name=hisname", "name"],
+        ["css=p > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='hisname']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "Квазиморд"
+    }, {
+      "id": "a90c81e3-6f24-4f5a-a9a7-faae56ba0edf",
+      "comment": "Ввести Возраст в форму",
+      "command": "type",
+      "target": "name=age",
+      "targets": [
+        ["name=age", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='age']", "xpath:attributes"],
+        ["xpath=//p/input[2]", "xpath:position"]
+      ],
+      "value": "98"
+    }, {
+      "id": "66132d61-6aca-4374-ad1c-5187de4dbc63",
+      "comment": "Выбрать вариант Алкоголя",
+      "command": "click",
+      "target": "xpath=//input[5]",
+      "targets": [
+        ["css=input:nth-child(14)", "css:finder"],
+        ["xpath=(//input[@name='show'])[3]", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c70e914-1553-42ca-bea6-960b2c87f575",
+      "comment": "Выбор Бога",
+      "command": "click",
+      "target": "name=god",
+      "targets": [
+        ["name=god", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='god']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Шаманист"
+    }, {
+      "id": "205acd97-971f-492d-9bef-e34e1406f6f0",
+      "comment": "Ввод текста в поле Причины",
+      "command": "type",
+      "target": "name=comment",
+      "targets": [
+        ["name=comment", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='comment']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Трёшка на Парнасе, а он всё никак, ыыы!!"
     }, {
       "id": "1193380c-f901-47fd-9b40-e0a07ab0db8c",
       "comment": "",
@@ -156,6 +167,13 @@
         ["xpath=//div[26]/div[2]/div/button", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "434656e0-5200-493f-826b-2a43f4c28a2f",
+      "comment": "Закрыть окно",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
@@ -166,6 +184,6 @@
     "timeout": 300,
     "tests": ["636a5bda-24d4-41cc-81e3-8b7a3e127c14"]
   }],
-  "urls": ["https://harmonious-conkies-f150a0.netlify.app/"],
+  "urls": ["https://harmonious-conkies-f150a0.netlify.app/", "https://resortofhelling.netlify.app/"],
   "plugins": []
 }
