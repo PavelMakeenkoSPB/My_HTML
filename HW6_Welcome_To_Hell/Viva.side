@@ -1,0 +1,171 @@
+{
+  "id": "67767713-518b-44a9-9174-c1b1136d2e27",
+  "version": "2.0",
+  "name": "Viva",
+  "url": "https://harmonious-conkies-f150a0.netlify.app",
+  "tests": [{
+    "id": "636a5bda-24d4-41cc-81e3-8b7a3e127c14",
+    "name": "helltesting",
+    "commands": [{
+      "id": "6b58f0c9-c9e0-4d05-b629-d0b2bfb7b1b4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a47f33eb-a5f5-4090-bb25-ea8f51b3111e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1761x1019",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9b0692d-471b-458b-8758-f3b3561e4687",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=amountMoney",
+      "targets": [
+        ["name=amountMoney", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "76,3.96875"
+    }, {
+      "id": "f1eb66ad-0264-4180-ba60-556bca68c1c6",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=amountMoney",
+      "targets": [
+        ["name=amountMoney", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "76,3.96875"
+    }, {
+      "id": "95ad9c27-2537-4b16-abfb-baf475e7f4ea",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=amountMoney",
+      "targets": [
+        ["name=amountMoney", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "76,3.96875"
+    }, {
+      "id": "31fdefc2-9096-4212-8d86-a670d0830cce",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h1",
+      "targets": [
+        ["css=h1:nth-child(6)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Семь Кругов Ада')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb15901e-8607-4f28-990b-d20de88e2368",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountMoney",
+      "targets": [
+        ["name=amountMoney", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "600"
+    }, {
+      "id": "c6dca04e-f52d-4027-992e-9b93b176ee8c",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountMoney",
+      "targets": [
+        ["name=amountMoney", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='amountMoney']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a09cf7c-739f-4d04-9c7f-d32e5110ccab",
+      "comment": "",
+      "command": "click",
+      "target": "name=isubmit",
+      "targets": [
+        ["name=isubmit", "name"],
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='isubmit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1193380c-f901-47fd-9b40-e0a07ab0db8c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "17c82b27-d1fb-4b4a-8ecf-7ee707790fe1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-large-play-button",
+      "targets": [
+        ["css=.ytp-large-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38e32e9-6a2c-418d-8955-c9fc8350c025",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[26]/div[2]/div[2]/button[7]", "xpath:idRelative"],
+        ["xpath=//button[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a92af04-3d39-4691-8d09-1809c0fe3432",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[26]/div[2]/div[2]/button[7]", "xpath:idRelative"],
+        ["xpath=//button[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "630af033-34d3-4467-8163-4d6d71084a15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[26]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[26]/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1517c99-66f9-4c7f-b582-6a337df785e7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["636a5bda-24d4-41cc-81e3-8b7a3e127c14"]
+  }],
+  "urls": ["https://harmonious-conkies-f150a0.netlify.app/"],
+  "plugins": []
+}
