@@ -1,16 +1,26 @@
 body {
-    background-image: url("pic/fonbaby1.jpg");
+    background-image: url("pic/canvas.jpg");
     margin: 50px;
     background-attachment: fixed;
 }
 
-body > div:nth-child(5) > h1{
+/*Название Главное*/
+body > h1 {
+    background-color: rgba(222, 184, 135, 0);
+    font-family: monospace;
+    font-size: 50px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em #d40000;
+}
+
+/*Заголовок Добро пожаловать*/
+h1[name="header"] {
+    background-color: rgba(222, 184, 135, 0);
+    font-family: monospace;
     font-size: 30px;
     font-style: italic;
-    -webkit-text-stroke: 0.01em rgb(220, 38, 38);
-	margin-left: 420px;
-    margin-top: 50px;
-	padding-bottom:10px;
+    margin-left: 420px;
+    -webkit-text-stroke: 0.01em #d40000;
 }
 
 h3 {
@@ -25,32 +35,30 @@ table,
 p,
 h2 {
     background-image: url("pic/paper.jpg");
-
     border-spacing: 5px;
     font-size: 18px;
     font-style: italic;
-    -webkit-text-stroke: 0.01em rgb(38, 39, 220);
-    text-align: left;
+    text-align: justify;
     border: 2px solid #006440;
     border-radius: 20px;
     height: auto;
     width: 1260px;
     background-color: rgba(222, 184, 135, 0);
     font-family: sans-serif;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-bottom: 5px;
+	padding: 5px 10px 5px 10px;
+    -webkit-text-stroke: 0.03em rgb(130, 24, 24);
+
 }
 
 /*Вот и ты здесь..*/
-body > div:nth-child(5) > p:nth-child(2){
+p[name="vot"]{
     height: auto;
     width: 250px;
     margin-top: 50px;
 }
 
 /*Наша миссия..*/
-body > div:nth-child(5) > p:nth-child(3) {
+p[name="mission"] {
     background-color: rgba(222, 184, 135, 0);
     width: 1170px;
     font-family: monospace;
@@ -62,7 +70,7 @@ body > div:nth-child(5) > p:nth-child(3) {
 }
 
 /*Если для вас очевидно..*/
-body > div:nth-child(5) > p:nth-child(4) {
+p[name="badFriend"]{
     height: auto;
     width: 350px;
     margin-top: -350px;
@@ -70,7 +78,7 @@ body > div:nth-child(5) > p:nth-child(4) {
 }
 
 /*Мы дружная команда*/
-body > div:nth-child(5) > p:nth-child(5) {
+p[name="weBest"] {
     height: auto;
     width: 350px;
     margin-top: 150px;
@@ -78,55 +86,35 @@ body > div:nth-child(5) > p:nth-child(5) {
 }
 
 /*Благодаря запатентованной..*/
-body > div:nth-child(5) > p:nth-child(6) {
+p[name="time"] {
     height: auto;
     width: 350px;
     margin-top: -120px;
     margin-left: 670px;
 }
 
-/*Если вы окозались...*/
-body > div:nth-child(5) > p:nth-child(7) {
+/*Если вы у нас окажетесь вновь...*/
+p[name="petrovich"]{
     height: auto;
     width: 550px;
     margin-top: 300px;
     margin-left: 180px;
 }
 
-/*Заголовок Добро пожаловать*/
-body > div:nth-child(8) > h1 {
-    background-color: rgba(222, 184, 135, 0);
-    font-family: monospace;
-    font-size: 30px;
-    font-style: italic;
-    margin-left: 420px;
-    -webkit-text-stroke: 0.01em #d40000;
-}
-
-/*Название Главное*/
-body > h1 {
-    background-color: rgba(222, 184, 135, 0);
-    font-family: monospace;
-    font-size: 50px;
-    font-style: italic;
-    -webkit-text-stroke: 0.01em #d40000;
-}
 
 /*Наша Здравница названа...*/
-body > div:nth-child(6) > h2 {
-    background-image: url("pic/paper.jpg");
+div[name="aboutUs"]{
     border-spacing: 5px;
     font-size: 18px;
     font-style: italic;
     -webkit-text-stroke: 0.01em rgb(220, 38, 38);
-    text-align: left;
     width: 1250px;
     height: auto;
     margin-top: 300px;
 }
 
 /*Значки*/
-body > div:nth-child(7) {
+div[name="znaki"]{
     margin-top: -330px;
     margin-left: 200px;
 }
@@ -147,14 +135,14 @@ blockquote {
     padding-top: 5px;
     padding-left: 10px;
 }
-/*Блок цитаты*/
-body > div:nth-child(8) {
+/*Блок цитаты босса*/
+div[name="boss"]{
     margin-top: 150px;
     margin-left: 300px;
 }
 
 /*Невозможно отказаться...*/
-body > div:nth-child(9) > p {
+div[name="aboutService"]{
     width: 1253px;
     margin-top: 80px;
     -webkit-text-stroke: 0.03em rgb(119, 66, 160);
@@ -183,13 +171,13 @@ body > div:nth-child(9) > p {
 }
 
 /*Пожертвование*/
-body > div:nth-child(11) {
+div[name="donate"] {
     margin-top: 50px;
     margin-left: 450px;
 }
 
 /*Поддержка*/
-body > div:nth-child(12) {
+div[name="support"] {
     margin-top: -685px;
     padding-top: 5px;
     padding-left: 10px;
@@ -197,48 +185,46 @@ body > div:nth-child(12) {
 }
 
 /*Приведи друга*/
-body > div:nth-child(13) {
+div[name="friend"] {
     margin-top: -590px;
     margin-left: 900px;
-
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 /*Грамота гостя*/
-body > div:nth-child(14){
+div[name="aboutForm"]{
     background-image: url("pic/paper.jpg");
-    width: 600px;
+    width: 800px;
     height: auto;
     border: 2px solid #006440;
     border-radius: 21px;
     border-spacing: 5px;
-    margin-top: 190px;
-    margin-left: 360px;
+    margin-top: 150px;
+    margin-left: 0px;
     font-size: 20px;
     font-style: italic;
     -webkit-text-stroke: 0.01em rgb(254, 32, 32);
     text-align: left;
     font-family: sans-serif;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px 10px 5px;
+
 }
 
 /*Кнопка Знайте же*/
-body > div:nth-child(14) > form > p > input[type=submit]:nth-child(22) {
+input[name="getinfo"] {
     font-size: 26px;
     font-style: italic;
     -webkit-text-stroke: 0.01em rgb(220, 38, 38);
     text-align: center;
     margin-top: 2px;
     margin-bottom: 10px;
-    margin-left: 200px;
+    margin-left: 320px;
 }
 
 /*Кнопка Подбросить*/
-body > div:nth-child(11) > form > input[type=submit]:nth-child(2) {
+input[name="isubmit"] {
     font-size: 26px;
     font-style: italic;
     -webkit-text-stroke: 0.01em rgb(220, 38, 38);
@@ -248,59 +234,71 @@ body > div:nth-child(11) > form > input[type=submit]:nth-child(2) {
 }
 
 /*Регулятор дров*/
-body > div:nth-child(11) > form > input[type=range]:nth-child(1) {
+input[name="amountMoney"] {
     width: 390px;
 }
 
 /*Таблица отзывов*/
-body > div:nth-child(15) > table {
+table[name="tableFeedback"] {
     margin-top: 50px;
 }
 
 /*Анкета гостя*/
-body > div:nth-child(14) > form > p {
-    width: 580px;
+p[name="anketa"] {
+    width: 780px;
+	background-image: url("pic/papeer1.jpg");
+    border-spacing: 0px;
+    font-size: 18px;
+    font-style: italic;
+    -webkit-text-stroke: 0.01em rgb(38, 39, 220);
+    text-align: justify;
+    border: 0px solid #006440;
+    border-radius: 0px;
+    height: auto;
+    background-color: rgba(222, 184, 135, 0);
+    font-family: sans-serif;
+	padding: 5px 10px 5px 10px;
 }
 
 /*Поле ввода текста в анкете*/
-body > div:nth-child(17) > form > p > textarea {
-    width: 550px;
+textarea[name="comment"] {
+    width: 770px;
 }
 
 /*Приветственная картинка чертей*/
-body > div:nth-child(16){
-    margin-top: -5510px;
+div[name="welcomeMans"]{
+    margin-top: -5500px;
     margin-left: 355px;
 }
 
 /*Коллектив*/
-body > div:nth-child(17) {
+div[name="kollektiv"] {
     margin-top: 210px;
     margin-left: 85px;
 }
 
 /*Часы*/
-body > div:nth-child(18) {
+div[name="sand"] {
     margin-top: -420px;
     margin-left: 1050px;
 }
 
 /*Пётр*/
-body > div:nth-child(19) {
+div[name="petr"] {
     margin-top: 80px;
     margin-left: 780px;
 }
 
 /*Телек*/
-body > div:nth-child(20) {
-    margin-top: 3530px;
-    margin-left: 1000px;
+div[name="tv"] {
+    margin-top: 3430px;
+    margin-left: 860px;
 }
 
 /*Видео*/
-body > div:nth-child(21) {
-    margin-top: -315px;
-    margin-left: 1040px;
+div[name="vset"] {
+    margin-top: -308px;
+    margin-left: 900px;
 }
 
 /*стили черезстрочной окраски текста таблиц*/
@@ -309,4 +307,8 @@ tbody tr:nth-child(odd) {
 }
 tbody tr:nth-child(even) {
     -webkit-text-stroke: 0.03em rgb(119, 66, 160);
+}
+
+.container{
+  min-width: 1270px;
 }
