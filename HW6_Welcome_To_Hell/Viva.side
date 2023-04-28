@@ -157,10 +157,22 @@
       ],
       "value": "98"
     }, {
+      "id": "3ac442d9-643c-4a7f-a87d-832b026107f1",
+      "comment": "Проверка, что выбран пункт Политических ток-шоу",
+      "command": "verifyChecked",
+      "target": "xpath=//p/input[3]",
+      "targets": [
+        ["name=show", "name"],
+        ["css=input:nth-child(12)", "css:finder"],
+        ["xpath=//input[@name='show']", "xpath:attributes"],
+        ["xpath=//p/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "31d774f2-26f0-4ac5-94bc-4e2ff50ee457",
       "comment": "Открыть выпадающий список Богов",
       "command": "click",
-      "target": "name=god",
+      "target": "xpath=//select[@name='god']",
       "targets": [
         ["name=god", "name"],
         ["css=select", "css:finder"],
@@ -210,6 +222,16 @@
         ["xpath=//input[7]", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "9b945d72-9056-493a-80e0-9f06228ce4af",
+      "comment": "Проверка слов Льва",
+      "command": "assertText",
+      "target": "xpath=//td[contains(text(), 'пьяницы')]",
+      "targets": [
+        ["css=tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[14]/table/tbody/tr[4]/td[2]", "xpath:position"]
+      ],
+      "value": "До путешествия в Ад люди постоянно говорили мне что я - лев, и чтобы я уходил! Меня это очень напрягало и жизнь была не в радость, ведь другие люди меня хотели порой даже поколотить. За что? обидно в общем. Но побывав на Курорте, мне дали понять(попробовать) как вкусны бывают люди, особенно пьяные! У меня просто глаза открылись, ну и пасть тоже. Теперь я радуюсь жизни вместе с людьми, особенно по пятницам и в Новый год! До встречи в Аду, пьяницы!"
     }, {
       "id": "33154f5e-7c90-4fa7-9e2f-02564c555bb8",
       "comment": "Выбор фрейма с видео",

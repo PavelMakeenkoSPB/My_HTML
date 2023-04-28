@@ -146,11 +146,8 @@ div[name="aboutService"]{
     width: 1253px;
     margin-top: 80px;
     -webkit-text-stroke: 0.03em rgb(119, 66, 160);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
+    padding: 5px 10px 5px 10px;
+    text-align: justify;
 }
 
 .banner {
@@ -164,10 +161,8 @@ div[name="aboutService"]{
     -webkit-text-stroke: 0.03em rgb(130, 24, 24);
     text-align: left;
     font-family: sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px 5px 10px;
+
 }
 
 /*Пожертвование*/
@@ -266,7 +261,7 @@ textarea[name="comment"] {
 }
 
 /*Приветственная картинка чертей*/
-div[name="welcomeMans"]{
+body > div:nth-child(16){
     margin-top: -5500px;
     margin-left: 355px;
 }
@@ -311,4 +306,34 @@ tbody tr:nth-child(even) {
 
 .container{
   min-width: 1270px;
+}
+
+select > :nth-child(1){
+	background-color: burlywood;
+	color: black;
+}
+
+select > :nth-child(3){
+	background-color: rgb(24, 129, 24);
+	color: white;
+}
+
+select > :nth-child(4){
+	background-color: red;
+	color: white;
+}
+
+select > :nth-child(5){
+	background-color: darkviolet;
+	color: white;
+}
+
+select > :nth-child(6){
+	background-color: cyan;
+	color: black;
+}
+
+select > :nth-child(7){
+	background-color: gold;
+	color: green;
 }
