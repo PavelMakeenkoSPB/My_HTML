@@ -17,7 +17,7 @@
       "id": "01430423-7dcf-4bf6-a33a-ea6bd914e2cc",
       "comment": "Установить размер окна",
       "command": "setWindowSize",
-      "target": "1280x900",
+      "target": "800x600",
       "targets": [],
       "value": ""
     }, {
@@ -33,7 +33,7 @@
       "value": ""
     }, {
       "id": "a1dc83e1-a81f-42c7-b37d-93bfbeed245d",
-      "comment": "Условие, что фото Сергея Жукова Точно есть Аду",
+      "comment": "Условие, что фото Сергея Жукова Точно есть в Аду",
       "command": "assertElementPresent",
       "target": "xpath=//tr[5]/td[2]",
       "targets": [
@@ -77,6 +77,20 @@
       "target": "xpath=//tbody[2]/tr/td/img",
       "targets": [],
       "value": "amountOfService"
+    }, {
+      "id": "9c8ddb77-2018-4f60-8e37-9b480dde2749",
+      "comment": "Получение количества картинок на странице",
+      "command": "storeXpathCount",
+      "target": "xpath=//img",
+      "targets": [],
+      "value": "numberOfImg"
+    }, {
+      "id": "4451496e-3afd-496e-a58e-9ba73af15356",
+      "comment": "Проверка, что на странице присутсвуют все 23 картинки",
+      "command": "assert",
+      "target": "numberOfImg",
+      "targets": [],
+      "value": "23"
     }, {
       "id": "c1647ead-ecf6-4af7-af43-0725c740fd98",
       "comment": "Проверка условия что картинок услуг - 7",
@@ -419,7 +433,7 @@
     }, {
       "id": "86ba251d-1e5d-49f8-ac89-1a4e52ecfc7c",
       "comment": "Закрыть браузер",
-      "command": "//close",
+      "command": "close",
       "target": "",
       "targets": [],
       "value": ""
