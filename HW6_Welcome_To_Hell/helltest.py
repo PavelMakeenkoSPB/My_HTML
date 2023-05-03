@@ -44,26 +44,31 @@ def main():
     #pushDonate = browser.find_element(By.XPATH, '//input[@name="isubmit"]').click()
     #time.sleep(5)
 
-    insertName = browser.find_element(By.XPATH, '//input[@name="hisname"]').send_keys("Квазиморд Витальевич")
+    #insertName = browser.find_element(By.XPATH, '//input[@name="hisname"]').send_keys("Квазиморд Витальевич")
     
-    insertAge = browser.find_element(By.XPATH, '//input[@name="age"]').send_keys(98)
+    #insertAge = browser.find_element(By.XPATH, '//input[@name="age"]').send_keys(98)
     
-    checkedChekbox = browser.find_element(By.XPATH, '//p/input[3]').is_selected()
+    #checkedChekbox = browser.find_element(By.XPATH, '//p/input[3]').is_selected()
 
-    selectCheckbox = browser.find_element(By.XPATH, '//p/input[4]').click()
+    #selectCheckbox = browser.find_element(By.XPATH, '//p/input[4]').click()
 
-    godChoising = browser.find_element(By.XPATH, '//select[@name="god"]')
-    select = Select(godChoising)
-    select.select_by_visible_text("Шаманист")
+    #godChoising = browser.find_element(By.XPATH, '//select[@name="god"]')
+    #select = Select(godChoising)
+    #select.select_by_visible_text("Шаманист")
     
-    typeText = browser.find_element(By.XPATH, '//textarea').send_keys("Трёшка на Парнасе...я наследник, а он всё никак!!! ЫЫыы!!\n")
+    #typeText = browser.find_element(By.XPATH, '//textarea').send_keys("Трёшка на Парнасе...я наследник, а он всё никак!!! ЫЫыы!!\n")
 
-    pushKnowThis = browser.find_element(By.XPATH, '//input[@name="getinfo"]').click()
+    #pushKnowThis = browser.find_element(By.XPATH, '//input[@name="getinfo"]').click()
 
-    lionsTale = browser.find_element(By.XPATH, '//td[contains(text(), "пьяницы")]')
-    textLion = lionsTale.text
-    assert "пьяницы" in textLion
-    print('Лев не врёт')
+    #lionsTale = browser.find_element(By.XPATH, '//td[contains(text(), "пьяницы")]')
+    #textLion = lionsTale.text
+    #assert "пьяницы" in textLion
+    #print('Лев не врёт')
+
+    browser.switch_to.frame(browser.find_element(By.XPATH('//*[@id="movie_player"]/div[4]/div')))
+    playMovie = browser.find_element(By.CSS_SELECTOR, 'ytp-large-play-button').click()
+    time.sleep(5)
+    pauseMovie = browser.find_element(By.CSS_SELECTOR, 'ytp-play-button').click()
 
 
     time.sleep(10)
