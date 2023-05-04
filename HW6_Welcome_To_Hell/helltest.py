@@ -49,8 +49,8 @@ def main():
 
     #Функционирование элемента slider и выставленеи значения 860
     #donate = browser.find_element(By.XPATH, '//input[@name="amountMoney"]')
-    #move = ActionChains(browser)
-    #move.click_and_hold(donate).move_by_offset(133, 0).release().perform()
+    #actions = ActionChains(browser)
+    #actions.click_and_hold(donate).move_by_offset(133, 0).release().perform()
 
     #Нажатие кнопки Поддать дров
     #pushDonate = browser.find_element(By.XPATH, '//input[@name="isubmit"]').click()
