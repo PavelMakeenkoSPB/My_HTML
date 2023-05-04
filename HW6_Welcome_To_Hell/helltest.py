@@ -10,10 +10,13 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
+
 
 def main():
     options = webdriver.ChromeOptions()
     browser = webdriver.Chrome()
+    actions = ActionChains(browser)
     #browser.set_window_size(800, 600)
     browser.maximize_window()    
     browser.get('https://resortofhelling.netlify.app/')
@@ -65,10 +68,15 @@ def main():
     #assert "пьяницы" in textLion
     #print('Лев не врёт')
 
-    browser.switch_to.frame(browser.find_element(By.XPATH('//*[@id="movie_player"]/div[4]/div')))
-    playMovie = browser.find_element(By.CSS_SELECTOR, 'ytp-large-play-button').click()
-    time.sleep(5)
-    pauseMovie = browser.find_element(By.CSS_SELECTOR, 'ytp-play-button').click()
+# Работа фрейма видеоплеера
+    videoFrame = browser.find_element(By.TAG_NAME, "iframe")
+    actions.move_to_element(videoFrame)
+    actions.perform()
+    browser.switch_to.frame(videoFrame)
+    playMovie = browser.find_element(By.CSS_SELECTOR, '.ytp-large-play-button').click()
+    time.sleep(11)
+    pauseMovie = browser.find_element(By.CSS_SELECTOR, '.ytp-play-button').click()
+    browser.switch_to.default_content()
 
 
     time.sleep(10)
