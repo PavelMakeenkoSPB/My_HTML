@@ -11,21 +11,23 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
 
+options = webdriver.ChromeOptions()
+browser = webdriver.Chrome()
+actions = ActionChains(browser)
+#browser.set_window_size(800, 600)
+browser.maximize_window()    
+browser.get('https://resortofhelling.netlify.app/')
+original_window = browser.current_window_handle
 
-def main():
-    options = webdriver.ChromeOptions()
-    browser = webdriver.Chrome()
-    actions = ActionChains(browser)
-    #browser.set_window_size(800, 600)
-    browser.maximize_window()    
-    browser.get('https://resortofhelling.netlify.app/')
-    original_window = browser.current_window_handle
+
+def SomeElementsAreVisible():
 
     # Проверка видимости заголовка страницы
+
     header = browser.find_element(By.XPATH, '//h1[contains(.,"Семь Кругов Ада")]').is_displayed()
     print("OK - Заглавие страницы отображается")
-    
-    #Проверка наличия фото Жукова
+
+    # Проверка наличия фото Жукова
     serega = browser.find_element(By.XPATH, '//tr[5]/td[2]').is_displayed()
     print("OK - Сергей Жуков в Аду")
 
@@ -49,6 +51,7 @@ def main():
     assert len(numberOfImg) == 23
     print("ОK - Количество картинок: 23")
 
+def IFrameWorking():
     #Функционирование элемента slider и выставленеи значения 860
     donate = browser.find_element(By.XPATH, '//input[@name="amountMoney"]')
     actions = ActionChains(browser)
@@ -60,6 +63,7 @@ def main():
     time.sleep(5)
     print("ОК - Кнопка 'Поддать дров' работает")
 
+def AnketaChecking():
     #Ввод текста в Анкету
     insertName = browser.find_element(By.XPATH, '//input[@name="hisname"]').send_keys("Квазиморд Витальевич")
     insertAge = browser.find_element(By.XPATH, '//input[@name="age"]').send_keys(98)
@@ -83,6 +87,7 @@ def main():
     pushKnowThis = browser.find_element(By.XPATH, '//input[@name="getinfo"]').click()
     print("ОК - Кнопка 'Знайте же' работает")
 
+def TextAssert():
     # Проверка наличия текста До встречи в Аду, пьяницы! в словах льва
     lionsTale = browser.find_element(By.XPATH, '//td[contains(text(), "пьяницы")]')
     textLion = lionsTale.text
@@ -100,6 +105,7 @@ def main():
     browser.switch_to.default_content()
     print("ОК - Плеер работает")
 
+def LinkChecking():
     # Поиск и переход по ссылкам Круглых Значков
     sevenSinght = browser.find_element(By.XPATH, '//img[@alt="seven"]').click()
     roundSight = browser.find_element(By.XPATH, '//img[@alt="round"]').click()
@@ -125,11 +131,18 @@ def main():
     # Переключение на начальную вкладку
     browser.switch_to.window(original_window)
 
+def QuitBrowser():
     browser.quit()
     print("Тест завершён успешно!")
 
-           
-main()
-
+def Run():
+    SomeElementsAreVisible()
+    IFrameWorking()
+    AnketaChecking()
+    TextAssert()
+    LinkChecking()
+    QuitBrowser()
+    
+Run()
 
 
