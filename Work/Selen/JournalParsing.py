@@ -17,29 +17,54 @@ from bs4 import BeautifulSoup
 options = webdriver.ChromeOptions()
 browser = webdriver.Chrome()
 actions = ActionChains(browser)
-#browser.set_window_size(800, 600)
-browser.maximize_window()    
+browser.maximize_window()
 browser.get('https://journal.top-academy.ru/ru/auth/login/index')
 actions = ActionChains(browser)
 
-time.sleep(5)
+
+waitingPage = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="username"]')))
+
 typeLogin = browser.find_element(By.XPATH, '//*[@id="username"]').send_keys("Makee_jv78")
 
 typePass = browser.find_element(By.XPATH, '//*[@id="password"]').send_keys("0Cf5Lt41")
 
-time.sleep(2)
 pushEnter = browser.find_element(By.XPATH, '//*[@id="1"]/form/button').click()
 
-time.sleep(5)
-
-bar = browser.find_element(By.XPATH, '//ng-component/div/div[1]/nav/div')
-actions(browser).click_and_hold(bar).release().perform()
-
-time.sleep(3)
-
-findMat = browser.find_element(By.XPATH, '//span[contains(text(), "Учебные материалы")]').click()
+waitingBar = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//ng-component/ng-component/div/div[1]'))).click()
 
 
+waitingMaterials = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//span[contains(text(), "Учебные материалы")]'))).click()
 
-#Makee_jv78
+getMaterials = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//div/a[contains(@download, "null")]')))
+
+#downloadMat =  WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '(//img[contains(@src, "material-picture.png")])[1]'))).click()
+
+html = browser.find_element(By.TAG_NAME, 'html')
+html.send_keys(Keys.END)
+time.sleep(2)
+html.send_keys(Keys.END)
+time.sleep(2)
+html.send_keys(Keys.END)
+time.sleep(2)
+html.send_keys(Keys.END)
+time.sleep(2)
+html.send_keys(Keys.END)
+html.send_keys(Keys.HOME)
+
+
+arr = []
+for i in range(1, 58):
+
+    st = str(i)
+    xpathUpdate = "(" + '//img[contains(@src, "material-picture.png")]' + ')' + '[' + st + "]"
+    arr.append(xpathUpdate)
+    
+time.sleep(2)
+for k in range(len(arr)):
+    downloadMat = browser.find_element(By.XPATH, arr[k]).click()
+
+
+# Makee_jv78
 # 0Cf5Lt41
+# //div/a[contains(@download, "null")] их 57
+# '(//img[contains(@src, "material-picture.png")])[1]' ih 1 iz 57
