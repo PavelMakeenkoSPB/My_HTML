@@ -20,62 +20,65 @@ actions = ActionChains(browser)
 browser.maximize_window()
 browser.get('https://journal.top-academy.ru/ru/auth/login/index')
 actions = ActionChains(browser)
+wait = WebDriverWait(browser, 5)
+element_located = EC.presence_of_element_located
+find_element = browser.find_element
+print(wait)
+
+waitingPage = wait.until(element_located((By.XPATH, '//*[@id="username"]')))
+
+typeLogin = find_element(By.XPATH, '//*[@id="username"]').send_keys("Makee_jv78")
+
+typePass = find_element(By.XPATH, '//*[@id="password"]').send_keys("0Cf5Lt41")
+
+pushEnter = find_element(By.XPATH, '//*[@id="1"]/form/button').click()
+
+#waitingBar = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//ng-component/ng-component/div/div[1]'))).click()
 
 
-waitingPage = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="username"]')))
+#waitingMaterials = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//span[contains(text(), "Учебные материалы")]'))).click()
 
-typeLogin = browser.find_element(By.XPATH, '//*[@id="username"]').send_keys("Makee_jv78")
-
-typePass = browser.find_element(By.XPATH, '//*[@id="password"]').send_keys("0Cf5Lt41")
-
-pushEnter = browser.find_element(By.XPATH, '//*[@id="1"]/form/button').click()
-
-waitingBar = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//ng-component/ng-component/div/div[1]'))).click()
+#waitigLibrary = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//div[contains(text(), "Библиотека")]'))).click()
 
 
-waitingMaterials = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//span[contains(text(), "Учебные материалы")]'))).click()
-
-waitigLibrary = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH, '//div[contains(text(), "Библиотека")]'))).click()
-
-
-html = browser.find_element(By.TAG_NAME, 'html')
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-time.sleep(1)
-html.send_keys(Keys.END)
-html.send_keys(Keys.HOME)
+#html = browser.find_element(By.TAG_NAME, 'html')
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#time.sleep(1)
+#html.send_keys(Keys.END)
+#html.send_keys(Keys.HOME)
 
 
-arr = []
-for i in range(1, 58):
+#arr = []
+#for i in range(1, 58):
 
-    st = str(i)
-    xpathUpdate = "(" + '//img[contains(@src, "material-picture.png")]' + ')' + '[' + st + "]"
-    arr.append(xpathUpdate)
+    #st = str(i)
+    #xpathUpdate = "(" + '//img[contains(@src, "material-picture.png")]' + ')' + '[' + st + "]"
+    #arr.append(xpathUpdate)
     
-time.sleep(2)
-for k in range(len(arr)):
-    downloadMat = browser.find_element(By.XPATH, arr[k]).click()
+#time.sleep(2)
+#for k in range(len(arr)):
+    #downloadMat = browser.find_element(By.XPATH, arr[k]).click()
 
 
 # Makee_jv78
