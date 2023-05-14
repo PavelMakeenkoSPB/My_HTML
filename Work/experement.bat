@@ -15,7 +15,7 @@ echo *** [ 2 ] --  Посмотреть содержимое папки с этим файлом ---
 echo ===========================================================
 echo *** [ 3 ] --  Указать желаемую папку для просмотра      ---
 echo ===========================================================
-echo *** [ 4 ] --  (='.'=)          Выйти            (=-.-=) ---
+echo *** [ 4 ] --  (='.'=)         Выйти             (='.'=) ---
 echo ===========================================================
 echo _______________________________                       
 
@@ -37,6 +37,17 @@ IF %choise% leq 0 (
 
 REM Условия рвботы программы
 :action
+REM IF %choise%==1 GOTO system32
+
+REM IF %choise%==2 GOTO batFileDir
+
+REM IF %choise%==3 GOTO yourDir
+
+REM IF %choise%==4 GOTO end
+
+REM IF %choise% geq 5 GOTO error
+
+
 IF %choise%==1 (
 	GOTO system32
 ) ELSE IF %choise%==2 (
@@ -89,5 +100,8 @@ echo * Всем спасибо, все свободны! *
 echo *******************************
 pause
 EXIT /b 0
+
+REM pause
 echo on 
 
+REM https://www.cyberforum.ru/cmd-bat/thread258321.html
