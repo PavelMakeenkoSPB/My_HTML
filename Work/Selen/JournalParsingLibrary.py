@@ -19,11 +19,12 @@ browser = webdriver.Chrome()
 actions = ActionChains(browser)
 browser.maximize_window()
 browser.get('https://journal.top-academy.ru/ru/auth/login/index')
+
 actions = ActionChains(browser)
 wait = WebDriverWait(browser, 5)
 element_located = EC.presence_of_element_located
 find_element = browser.find_element
-print(wait)
+
 
 waitingPage = wait.until(element_located((By.XPATH, '//*[@id="username"]')))
 
