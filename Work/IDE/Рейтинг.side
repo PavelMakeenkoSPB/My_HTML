@@ -1,0 +1,346 @@
+{
+  "id": "75e4695e-e8b9-4b1f-b684-889a310f4c91",
+  "version": "2.0",
+  "name": "MSK_rest",
+  "url": "https://www.moscow-restaurants.ru/",
+  "tests": [{
+    "id": "89e2dcc4-2d3f-42f5-8313-1cb0a6cce2e6",
+    "name": "Поиск",
+    "commands": [{
+      "id": "c41977dd-787f-47aa-9268-80df0f3720c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c3017f7-8052-4908-9d37-8a42f71f3cce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3cff4b-97a5-4f74-b65f-fab4100544fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d09486-c355-4fa0-a7e6-7ab1a1390839",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "борщ"
+    }, {
+      "id": "0a4182ad-ea1a-44b1-ad80-0818b12b2afc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a9cda0e7-662b-4064-be41-136e43e97cc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Борщ с копченой уткой и чесночным багетом в Bird BQ",
+      "targets": [
+        ["linkText=Борщ с копченой уткой и чесночным багетом в Bird BQ", "linkText"],
+        ["css=dd:nth-child(20) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Борщ с копченой уткой и чесночным багетом в Bird BQ')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl[2]/dd[19]/s/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dishes/borsch_s_kopchenoy_utkoy_i_chesnochnym_bagetom_4316.html')]", "xpath:href"],
+        ["xpath=//dd[19]/s/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Борщ с копченой уткой и чесночным багетом в Bird BQ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "045fd242-7f83-4031-b6ef-4540d53e05be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3f33046-314a-4cdb-8029-80621309a1f3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "уха"
+    }, {
+      "id": "01fb2982-c8b0-436d-9f50-50c04eb6d777",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d71b7a65-15da-46ff-bc70-f152e66d0edf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Духан Алаверды",
+      "targets": [
+        ["linkText=Духан Алаверды", "linkText"],
+        ["css=.item-search_result_col:nth-child(1) > dd:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Духан Алаверды')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl/dd[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/restaurants/dukhan_alaverdy.html')]", "xpath:href"],
+        ["xpath=//dd[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Духан Алаверды')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd6fb799-a8a5-425d-9445-104ba09ec4cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f979eee-4f65-4a46-9e72-2b233df5bf80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-inner:nth-child(2)",
+      "targets": [
+        ["css=.g-inner:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d99385d5-a574-4fb4-b096-dc026bc6d628",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > i",
+      "targets": [
+        ["css=.btn > i", "css:finder"],
+        ["xpath=//div[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bdbc3f0-58f1-4617-b38b-1d64b3708b9e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "солянка"
+    }, {
+      "id": "0b5e7052-b42c-4dc6-9d15-2bed6eabf45d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input > input",
+      "targets": [
+        ["css=.input > input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bec851db-bb5d-4479-bad4-3aed873f5067",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Солянка сборная в Курорт",
+      "targets": [
+        ["linkText=Солянка сборная в Курорт", "linkText"],
+        ["css=dd:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Солянка сборная в Курорт')]", "xpath:link"],
+        ["xpath=//div[@id='results']/dl[2]/dd[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dishes/solyanka_sbornaya_13122.html')]", "xpath:href"],
+        ["xpath=//dd[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Солянка сборная в Курорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "21c5ea8d-5844-4b83-9d48-5fe78d40405f",
+    "name": "рейтинг",
+    "commands": [{
+      "id": "21a00c28-c5a7-45b2-aaea-5f5a31c332b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.moscow-restaurants.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35871543-16d2-48c1-81a1-c25255a3b6b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8de76e-7c98-4a02-a9c6-73a67a8330f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(4) .text",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(4) .text", "css:finder"],
+        ["xpath=//body/div/div/div[2]/div/div/ul/li[4]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11606fc9-5d98-46d1-8eb1-cc3e994d7f83",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=обзоры ресторанов",
+      "targets": [
+        ["linkText=обзоры ресторанов", "linkText"],
+        ["css=p > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'обзоры ресторанов')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/')])[3]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'обзоры ресторанов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c29b214-7025-43f0-876b-c9456eb95cb2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рейтинг",
+      "targets": [
+        ["linkText=Рейтинг", "linkText"],
+        ["css=.l-links:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рейтинг')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/rating.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рейтинг')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d147bff-ce64-4e4c-9119-8c9e8c563f66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selection-made",
+      "targets": [
+        ["css=.selection-made", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Выбрать кухню')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb2e393-2ee0-46e8-b606-b02e9cdba61a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Авторская кухня",
+      "targets": [
+        ["linkText=Авторская кухня", "linkText"],
+        ["css=li:nth-child(5) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Авторская кухня')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/rating.html?cuisine=1')])[2]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Авторская кухня')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32847527-66c9-4802-97ee-aeef24206d1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Лучшие",
+      "targets": [
+        ["linkText=Лучшие", "linkText"],
+        ["css=.l-links > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Лучшие')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/ofthemonth.html?cuisine=1')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Лучшие')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadb05aa-06ce-48f9-bf00-21ec04e67929",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selection-made",
+      "targets": [
+        ["css=.selection-made", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0279f9d6-9e07-4bc6-ad2e-261eb60c42e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2022",
+      "targets": [
+        ["linkText=2022", "linkText"],
+        ["css=li:nth-child(7) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'2022')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/restaurants/ofthemonth.html?year=2022')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae13f6aa-ffab-4674-ae5e-db1ce6c1692c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .fn",
+      "targets": [
+        ["css=li:nth-child(3) .fn", "css:finder"],
+        ["xpath=//li[3]/span/a/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfddc0a-7554-4be0-acc7-2ed177b41135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_2 > .text_2",
+      "targets": [
+        ["css=.logo-col_2 > .text_2", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a96fe7-c952-4688-9058-0bdc27d057e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-col_1 img",
+      "targets": [
+        ["css=.logo-col_1 img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dcd34d39-2464-4378-b24b-49d6d8477e1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.moscow-restaurants.ru/"],
+  "plugins": []
+}
