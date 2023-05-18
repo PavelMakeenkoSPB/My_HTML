@@ -1,0 +1,128 @@
+{
+  "id": "a10a30b1-32d2-49d8-a2cb-cb7467284cef",
+  "version": "2.0",
+  "name": "Litres",
+  "url": "https://www.litres.ru",
+  "tests": [{
+    "id": "72ef7ebd-5674-4945-8fbd-8c2089671965",
+    "name": "Novinki",
+    "commands": [{
+      "id": "2ab82076-cebc-4809-a20c-161490c4457b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d9f536a-4e1f-4441-94dd-412cfab87b8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddd9b4e4-8856-41eb-a1e8-6793e230a54e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Новинки",
+      "targets": [
+        ["linkText=Новинки", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/novie/')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новинки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f473031-22a5-40ba-a0c4-ae429e887876",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новинки",
+      "targets": [
+        ["linkText=Новинки", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/novie/')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новинки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0b8c43ed-bdfa-442a-841c-e19dd974217f",
+    "name": "Popular",
+    "commands": [{
+      "id": "70cb7c32-345f-4527-aeec-5521f2037628",
+      "comment": "",
+      "command": "run",
+      "target": "Popular",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56d95943-3437-405c-a4d6-95cc11a5b56e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48ec5d8d-57d6-49d6-bd5f-02c2aaa5d062",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Что почитать?",
+      "targets": [
+        ["linkText=Что почитать?", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Что почитать?')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/chto-chitat/')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Что почитать?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcab624c-d2e9-43ce-9429-6aff66524d09",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Что почитать?",
+      "targets": [
+        ["linkText=Что почитать?", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Что почитать?')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/chto-chitat/')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Что почитать?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4ae757-7727-45cf-888a-5ae78ae17455",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Популярное",
+      "targets": [
+        ["linkText=Популярное", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Популярное')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/luchshie-knigi/')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Популярное')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "17bb9e57-6758-4529-8e64-76baa5c5fe3d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39b0ef6e-f970-486a-a781-fd454720da4c"]
+  }],
+  "urls": ["https://www.litres.ru/"],
+  "plugins": []
+}
