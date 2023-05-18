@@ -1,0 +1,87 @@
+{
+  "id": "aa46f377-c8bc-497e-9f08-faac909f2b22",
+  "version": "2.0",
+  "name": "MoscowRest",
+  "url": "https://www.moscow-restaurants.ru",
+  "tests": [{
+    "id": "aa647a7d-f080-46f6-a84e-4efed8595011",
+    "name": "Dishes",
+    "commands": [{
+      "id": "272e8b1a-ad1a-4092-9a93-128779cccab7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf6b0c7-77d9-4600-8051-83cf74ae6548",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ff41906-34eb-4d37-925e-3225d55d9146",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-outer:nth-child(2) li:nth-child(2) .icon",
+      "targets": [
+        ["css=.g-outer:nth-child(2) li:nth-child(2) .icon", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2caa99c7-b169-4e71-b798-e443f65e9f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .round-img-nosize",
+      "targets": [
+        ["css=li:nth-child(3) .round-img-nosize", "css:finder"],
+        ["xpath=//img[@alt='Хинкали']", "xpath:img"],
+        ["xpath=//li[3]/a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4359eda0-2361-4f20-82ae-e214e1f6fcb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.data-dishes-content:nth-child(5) li:nth-child(16) .title",
+      "targets": [
+        ["css=.data-dishes-content:nth-child(5) li:nth-child(16) .title", "css:finder"],
+        ["xpath=//li[16]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9bf7f90-dd15-4c0a-81b2-5dd31fc21ea6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=читать целиком...",
+      "targets": [
+        ["linkText=читать целиком...", "linkText"],
+        ["css=.where > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'читать целиком...')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/restaurants/shafran.html')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'читать целиком...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df692ca4-b024-4eaf-a644-66d276182042",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dd0608fa-883d-4ec2-85a8-c6b475c81f5a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.moscow-restaurants.ru/"],
+  "plugins": []
+}
