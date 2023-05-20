@@ -141,15 +141,21 @@ GOTO setupMenu
 REM Запуск установки selenium-side-runner
 :sideSetup
 npm install -g selenium-side-runner@3.17.0
-REM npm install -g @3.17.0
+pause
 GOTO setupMenu
 
 REM Скачивание драйверов и копирование скаченных ранее в папку, указанную в PATH
 :webdriverSetup
-npm install -g chromedriver
-npm install -g edgedriver
-npm install -g geckodriver
-npm install -g iedriver
+REM npm install -g chromedriver
+REM GOTO edgeDown
+REM :edgeDown
+REM npm install -g edgedriver
+REM GOTO firefoxDown
+REM :firefoxDown
+REM npm install -g geckodriver
+REM GOTO IEDown
+REM :IEDown
+REM npm install -g iedriver
 
 set DriverDir=C:\temp\driver
 IF NOT EXIST "%DriverDir%" mkdir C:\temp\driver
@@ -208,23 +214,24 @@ IF %choise%==1 (
 
 :sideChrome
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-npm selenium-side-runner -c "browserName=chrome" %sidePath%
-GOTO sideMenu
+REM npm 
+selenium-side-runner -c "browserName=chrome" %sidePath%
+REM GOTO sideMenu
 
 :sideFirefox
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-npm selenium-side-runner -c "browserName=firefox" %sidePath%
-GOTO sideMenu
+selenium-side-runner -c "browserName=firefox" %sidePath%
+REM GOTO sideMenu
 
 :sideEdge
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-npm selenium-side-runner -c "browserName=edge" %sidePath%
-GOTO sideMenu
+selenium-side-runner -c "browserName=edge" %sidePath%
+REM GOTO sideMenu
 
 :sideIE
-set p/ sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-npm selenium-side-runner -c "browserName='internet explorer'" %sidePath%
-GOTO sideMenu
+set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
+selenium-side-runner -c "browserName='internet explorer'" %sidePath%
+REM GOTO sideMenu
 
 :cmdLine
 cmd

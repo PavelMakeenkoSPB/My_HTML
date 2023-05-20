@@ -1,0 +1,249 @@
+@echo off
+@chcp 866
+
+REM Запрос запуска с правами администратора
+REM if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
+
+TITLE Side-runner
+cls
+color F0
+set PATH=%PATH%;C:\temp\driver
+set current=/d "%~dp0"
+cd %current%
+
+
+:mainMenu
+
+echo ■═════════════════════■ ГЛАВНОЕ МЕНЮ ■════════════════════■
+echo ╔═════════════════════════════════════════════════════════╗
+echo ║  [ 1 ] --  Установка всего необходимого              --║
+echo ╠=========================================================╣
+echo ║  [ 2 ] --  Запуск .side проектов                     --║
+echo ╠=========================================================╣
+echo ║  [ 3 ] --  Перейти в папку и запустить Консоль       --║
+echo ╠=========================================================╣
+echo ║  [ 4 ] --  (='.'=)     Выйти     (=-.-=)             --║
+echo ╚═════════════════════════════════════════════════════════╝
+
+GOTO insert
+
+
+
+:insert
+REM Ввод данных
+echo _______________________ 
+set /p inserted="Введите цифру режима: "
+
+REM Присвоение введённого значения перменной, которая может быть только числом
+set /a choise=%inserted%
+
+REM Проверка данных на принадлежность к числам. Если присвоено не число, переменная имеет значение  0
+IF %choise% leq 0 (
+	GOTO error
+)ELSE (
+	GOTO action
+)
+
+REM Условия рвботы программы
+:action
+IF %choise%==1 (
+	GOTO setupMenu
+) ELSE IF %choise%==2 (
+	GOTO sideMenu
+) ELSE IF %choise%==3 (
+	GOTO yourDir
+) ELSE IF %choise%==4 (
+	GOTO end
+) ELSE GOTO mainMenu
+
+REM Просмотр system32
+:system32
+set wind=C:\Windows\System32
+cd %wind% 
+dir
+GOTO end
+
+REM Просмотр текущей папки с bat файлом
+:batFileDir
+set current=/d "%~dp0"
+cd %current% 
+dir
+GOTO end
+
+REM Просмотр указанной папки 
+:yourDir
+echo __________________________________________________________________________________
+set /p yourDirictory="Введите путь к желаемой папке, например: C:\Windows\, или 4 для вывода Меню ===> "
+IF EXIST "%yourDirictory%" (
+	cd %yourDirictory%
+	dir
+	GOTO cmdLine
+) ELSE IF %yourDirictory%==4 (
+	GOTO mainMenu
+) ELSE (
+	echo По указанному адресу ничего не найдено :(
+	GOTO yourDir)
+
+REM Сообщение об ошибке и выход
+:error
+echo ___________________________________________________________
+echo Введённые данные некорректны. Выход из программы с ошибкой
+pause
+EXIT /b 128
+
+REM Меню выбора установок и настроек
+:setupMenu
+echo ■════════════════════■ МЕНЮ УСТАНОВОК ■═══════════════════■
+echo ╔═════════════════════════════════════════════════════════╗
+echo ║ [ 1 ] --  Установить Node.js                        --║
+echo ╠=========================================================╣
+echo ║ [ 2 ] --  Установить Side-runner                    --║
+echo ╠=========================================================╣
+echo ║ [ 3 ] --  Подключить webdrivers                     --║
+echo ╠=========================================================╣
+echo ║ [ 4 ] --  (='.'=)     Выйти     (=-.-=)             --║
+echo ╚═════════════════════════════════════════════════════════╝
+
+GOTO setupInsert
+
+REM Ввод и проверка данных полльзователя
+:setupInsert
+echo _______________________ 
+set /p inserted="Введите цифру установщика: "
+
+REM Присвоение введённого значения перменной, которая может быть только числом
+set /a choise=%inserted%
+
+REM Проверка данных на принадлежность к числам. Если присвоено не число, переменная имеет значение  0
+IF %choise% leq 0 (
+	GOTO setupMenu
+)ELSE (
+	GOTO setupAction
+)
+
+REM Выбор функциии установщика
+:setupAction
+IF %choise%==1 (
+	GOTO nodeSetup
+) ELSE IF %choise%==2 (
+	GOTO sideSetup
+) ELSE IF %choise%==3 (
+	GOTO webdriverSetup
+) ELSE IF %choise%==4 (
+	GOTO mainMenu
+) ELSE GOTO setupMenu
+
+REM Запуск установки Node.js
+:nodeSetup
+node-v18.16.0-x64.msi
+GOTO setupMenu
+
+REM Запуск установки selenium-side-runner
+:sideSetup
+npm install -g selenium-side-runner@3.17.0
+pause
+GOTO setupMenu
+
+REM Скачивание драйверов и копирование скаченных ранее в папку, указанную в PATH
+:webdriverSetup
+REM npm install -g chromedriver
+REM GOTO edgeDown
+REM :edgeDown
+REM npm install -g edgedriver
+REM GOTO firefoxDown
+REM :firefoxDown
+REM npm install -g geckodriver
+REM GOTO IEDown
+REM :IEDown
+REM npm install -g iedriver
+
+set DriverDir=C:\temp\driver
+IF NOT EXIST "%DriverDir%" mkdir C:\temp\driver
+REM set PATH=%PATH%;C:\temp\driver
+copy driver C:\temp\driver 
+GOTO setupMenu
+
+
+REM Меню выбора режимов работы SIDE-RUNNER
+:sideMenu
+echo ■══════════════════════■ SIDE-RUNNER ■════════════════════■
+echo ╔═════════════════════════════════════════════════════════╗
+echo ║   [ 1 ] --  Использовать Chrome                    --║
+echo ╠=========================================================╣
+echo ║   [ 2 ] --  Использовать Firefox                   --║
+echo ╠=========================================================╣
+echo ║   [ 3 ] --  Использовать Edge                      --║
+echo ╠=========================================================╣
+echo ║   [ 4 ] --  Использовать IE                        --║
+echo ╠=========================================================╣
+echo ║   [ 5 ] --  Выйти в Главное Меню                   --║
+echo ╚═════════════════════════════════════════════════════════╝
+
+GOTO sideInsert
+
+:sideInsert
+REM Ввод данных
+echo _______________________ 
+set /p inserted="Введите цифру браузера: "
+
+REM Присвоение введённого значения перменной, которая может быть только числом
+set /a choise=%inserted%
+
+REM Проверка данных на принадлежность к числам. Если присвоено не число, переменная имеет значение  0
+IF %choise% leq 0 (
+	GOTO sideMenu
+)ELSE (
+	GOTO side-RunnerAction
+)
+
+
+:side-RunnerAction
+IF %choise%==1 (
+	GOTO sideChrome
+) ELSE IF %choise%==2 (
+	GOTO sideFirefox
+) ELSE IF %choise%==3 (
+	GOTO sideEdge
+) ELSE IF %choise%==4 (
+	GOTO sideIE
+) ELSE IF %choise%==5 (
+	GOTO mainMenu
+)ELSE GOTO sideMenu
+
+
+
+:sideChrome
+set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
+REM npm 
+selenium-side-runner -c "browserName=chrome" %sidePath%
+REM GOTO sideMenu
+
+:sideFirefox
+set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
+selenium-side-runner -c "browserName=firefox" %sidePath%
+REM GOTO sideMenu
+
+:sideEdge
+set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
+selenium-side-runner -c "browserName=edge" %sidePath%
+REM GOTO sideMenu
+
+:sideIE
+set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
+selenium-side-runner -c "browserName='internet explorer'" %sidePath%
+REM GOTO sideMenu
+
+:cmdLine
+cmd
+
+
+REM Завершение работы
+:end
+echo ■═════════════════════════════■
+echo ║ Всем спасибо, все свободны! ║
+echo ■═════════════════════════════■
+pause
+EXIT /b 0
+echo on 
+
+
