@@ -216,6 +216,7 @@ IF %choise%==1 (
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
 REM npm 
 selenium-side-runner -c "browserName=chrome" %sidePath%
+cmd
 REM GOTO sideMenu
 
 :sideFirefox
@@ -225,12 +226,13 @@ REM GOTO sideMenu
 
 :sideEdge
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-selenium-side-runner -c "browserName=edge" %sidePath%
+selenium-side-runner -c "browserName=MicrosoftEdge" %sidePath%
+cmd
 REM GOTO sideMenu
 
 :sideIE
 set /p sidePath="укажите путь до файла .side, например C:\temp\1.side ===>  "
-selenium-side-runner -c "browserName='internet explorer'" %sidePath%
+selenium-side-runner --c "browserName='opera'" %sidePath%
 REM GOTO sideMenu
 
 :cmdLine
