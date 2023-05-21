@@ -20,7 +20,7 @@ echo º  [ 1 ] --  “áâ ­®¢ª  ¢á¥£® ­¥®¡å®¤¨¬®£®              --º
 echo Ì=========================================================¹
 echo º  [ 2 ] --  ‡ ¯ãáª .side ¯à®¥ªâ®¢                     --º
 echo Ì=========================================================¹
-echo º  [ 3 ] --  ¥à¥©â¨ ¢ ¯ ¯ªã ¨ § ¯ãáâ¨âì Š®­á®«ì       --º
+echo º  [ 3 ] --  ‡ ¯ãáâ¨âì Š®¬ ­¤­ãî áâà®ªã                --º
 echo Ì=========================================================¹
 echo º  [ 4 ] --  (='.'=)     ‚ë©â¨     (=-.-=)             --º
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
@@ -51,7 +51,7 @@ IF %choise%==1 (
 ) ELSE IF %choise%==2 (
 	GOTO sideMenu
 ) ELSE IF %choise%==3 (
-	GOTO yourDir
+	GOTO cmdLine
 ) ELSE IF %choise%==4 (
 	GOTO end
 ) ELSE GOTO mainMenu
@@ -99,9 +99,11 @@ echo º [ 1 ] --  “áâ ­®¢¨âì Node.js                        --º
 echo Ì=========================================================¹
 echo º [ 2 ] --  “áâ ­®¢¨âì Side-runner                    --º
 echo Ì=========================================================¹
-echo º [ 3 ] --  ®¤ª«îç¨âì webdrivers                     --º
+echo º [ 3 ] --  ‘ª ç âì webdrivers ¤«ï Node               --º	 
 echo Ì=========================================================¹
-echo º [ 4 ] --  (='.'=)     ‚ë©â¨     (=-.-=)             --º
+echo º [ 4 ] --  ‘ª®¯¨à®¢ âì webdrivers  .exe              --º
+echo Ì=========================================================¹
+echo º [ 5 ] --  ‚ë©â¨ ¢ ƒ« ¢­®¥ ¬¥­î        (=-.-=)       --º
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 
 GOTO setupInsert
@@ -128,8 +130,10 @@ IF %choise%==1 (
 ) ELSE IF %choise%==2 (
 	GOTO sideSetup
 ) ELSE IF %choise%==3 (
-	GOTO webdriverSetup
+	GOTO downloadWDrivers
 ) ELSE IF %choise%==4 (
+	GOTO copyWDrivers
+) ELSE IF %choise%==5 (
 	GOTO mainMenu
 ) ELSE GOTO setupMenu
 
@@ -141,22 +145,16 @@ GOTO setupMenu
 REM ‡ ¯ãáª ãáâ ­®¢ª¨ selenium-side-runner
 :sideSetup
 npm install -g selenium-side-runner@3.17.0
-pause
 GOTO setupMenu
 
-REM ‘ª ç¨¢ ­¨¥ ¤à ©¢¥à®¢ ¨ ª®¯¨à®¢ ­¨¥ áª ç¥­­ëå à ­¥¥ ¢ ¯ ¯ªã, ãª § ­­ãî ¢ PATH
-:webdriverSetup
-REM npm install -g chromedriver
-REM GOTO edgeDown
-REM :edgeDown
-REM npm install -g edgedriver
-REM GOTO firefoxDown
-REM :firefoxDown
-REM npm install -g geckodriver
-REM GOTO IEDown
-REM :IEDown
-REM npm install -g iedriver
+REM ‘ª ç¨¢ ­¨¥ ¢¥¡-¤à ©¢¥à®¢ ¤«ï Node
+:downloadWDrivers
+npm install -g chromedriver && npm install -g edgedriver && npm install -g geckodriver && npm install -g opera && Side-runner.bat
 
+
+REM ª®¯¨à®¢ ­¨¥ áª ç¥­­ëå à ­¥¥ ¢ ¯ ¯ªã, ãª § ­­ãî ¢ PATH
+
+:copyWDrivers
 set DriverDir=C:\temp\driver
 IF NOT EXIST "%DriverDir%" mkdir C:\temp\driver
 REM set PATH=%PATH%;C:\temp\driver
@@ -174,7 +172,7 @@ echo º   [ 2 ] --  ˆá¯®«ì§®¢ âì Firefox                   --º
 echo Ì=========================================================¹
 echo º   [ 3 ] --  ˆá¯®«ì§®¢ âì Edge                      --º
 echo Ì=========================================================¹
-echo º   [ 4 ] --  ˆá¯®«ì§®¢ âì IE                        --º
+echo º   [ 4 ] --  ¥ ˆá¯®«ì§®¢ âì Opera                  --º
 echo Ì=========================================================¹
 echo º   [ 5 ] --  ‚ë©â¨ ¢ ƒ« ¢­®¥ Œ¥­î                   --º
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
@@ -205,7 +203,7 @@ IF %choise%==1 (
 ) ELSE IF %choise%==3 (
 	GOTO sideEdge
 ) ELSE IF %choise%==4 (
-	GOTO sideIE
+	GOTO sideOpera
 ) ELSE IF %choise%==5 (
 	GOTO mainMenu
 )ELSE GOTO sideMenu
@@ -214,24 +212,23 @@ IF %choise%==1 (
 
 :sideChrome
 set /p sidePath="ãª ¦¨â¥ ¯ãâì ¤® ä ©«  .side, ­ ¯à¨¬¥à C:\temp\1.side ===>  "
-REM npm 
 selenium-side-runner -c "browserName=chrome" %sidePath%
-REM GOTO sideMenu
+echo ‚¢¥¤¨â¥ Side-runner.bat çâ®¡ë § ¯ãá¨âì ¯à®£à ¬¬ã á­®¢  ¨«¨ exit ¤«ï ¢ëå®¤ 
 
 :sideFirefox
 set /p sidePath="ãª ¦¨â¥ ¯ãâì ¤® ä ©«  .side, ­ ¯à¨¬¥à C:\temp\1.side ===>  "
 selenium-side-runner -c "browserName=firefox" %sidePath%
-REM GOTO sideMenu
+echo ‚¢¥¤¨â¥ Side-runner.bat çâ®¡ë § ¯ãá¨âì ¯à®£à ¬¬ã á­®¢  ¨«¨ exit ¤«ï ¢ëå®¤ 
 
 :sideEdge
 set /p sidePath="ãª ¦¨â¥ ¯ãâì ¤® ä ©«  .side, ­ ¯à¨¬¥à C:\temp\1.side ===>  "
-selenium-side-runner -c "browserName=edge" %sidePath%
-REM GOTO sideMenu
+selenium-side-runner -c "browserName=MicrosoftEdge" %sidePath%
 
-:sideIE
+:sideOpera
 set /p sidePath="ãª ¦¨â¥ ¯ãâì ¤® ä ©«  .side, ­ ¯à¨¬¥à C:\temp\1.side ===>  "
-selenium-side-runner -c "browserName='internet explorer'" %sidePath%
-REM GOTO sideMenu
+selenium-side-runner --c "browserName='opera'" %sidePath%
+
+
 
 :cmdLine
 cmd
