@@ -1,64 +1,171 @@
 {
-  "id": "a4395a1c-7e5b-4029-b3d3-f7e569e92b9b",
+  "id": "e643da0d-6af5-492e-8a6b-9fc0abae3dd9",
   "version": "2.0",
-  "name": "Audio",
+  "name": "2litres",
   "url": "https://www.litres.ru",
   "tests": [{
-    "id": "25ac3e88-9237-4d72-a9ec-ad2a2fe7c732",
-    "name": "Abook",
+    "id": "39b0ef6e-f970-486a-a781-fd454720da4c",
+    "name": "Popular",
     "commands": [{
-      "id": "58bc0ada-d7ef-40c1-8d16-80d3367b62c9",
+      "id": "06ca2b6f-6c89-4152-b97b-7030e7ccd527",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "30c3da66-c4cc-41d8-9f8d-a3a671d97d93",
+      "id": "56d95943-3437-405c-a4d6-95cc11a5b56e",
       "comment": "",
       "command": "setWindowSize",
       "target": "1642x1020",
       "targets": [],
       "value": ""
     }, {
-      "id": "d8834fa7-cdcb-499c-997a-1ee8e6eb6e5d",
+      "id": "48ec5d8d-57d6-49d6-bd5f-02c2aaa5d062",
       "comment": "",
-      "command": "click",
-      "target": "linkText=Аудиокниги",
+      "command": "mouseOver",
+      "target": "linkText=Что почитать?",
       "targets": [
-        ["linkText=Аудиокниги", "linkText"],
-        ["css=.LowerMenu-module__item_3QP99:nth-child(5) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Аудиокниги')]", "xpath:link"],
-        ["xpath=//div[@id='__next']/div/header/nav/div/div[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/chto-slushat/')]", "xpath:href"],
-        ["xpath=//div[5]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Аудиокниги')]", "xpath:innerText"]
+        ["linkText=Что почитать?", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Что почитать?')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/chto-chitat/')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Что почитать?')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "200b5f94-0470-4343-8f3a-bef756d55fa2",
+      "id": "fcab624c-d2e9-43ce-9429-6aff66524d09",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Что почитать?",
+      "targets": [
+        ["linkText=Что почитать?", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Что почитать?')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/chto-chitat/')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Что почитать?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4ae757-7727-45cf-888a-5ae78ae17455",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Популярное",
+      "targets": [
+        ["linkText=Популярное", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Популярное')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/luchshie-knigi/')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Популярное')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fa43760e-562a-4422-a507-844bcdc6695e",
+    "name": "Podbor",
+    "commands": [{
+      "id": "36cf1b1c-7f40-45ba-9979-a9ce619ed118",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1accea98-faef-4195-9a9e-8b5a548b7b6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca83fed8-2a78-411d-81f5-cbd5b77b2659",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подборки",
+      "targets": [
+        ["linkText=Подборки", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подборки')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/podborki/')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подборки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd6c911a-f887-47a0-bc9e-4fa1f9fafb55",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b577342-b56e-4b3d-a2de-92659a73f08b",
+    "name": "Samizdat",
+    "commands": [{
+      "id": "ccb120ef-6246-4f73-aa7a-50b9c34a224c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70d11088-91ee-42ef-a8ec-6c166d512f72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c4cc4d2-52ce-448f-9b59-1c1dabe9bf09",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Самиздат",
+      "targets": [
+        ["linkText=Самиздат", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Самиздат')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/selfpublishing/')]", "xpath:href"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Самиздат')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73986a98-4649-4eee-912f-fae18da47167",
       "comment": "",
       "command": "mouseOver",
-      "target": "linkText=Аудиокниги",
+      "target": "css=.Banners-module__bannerMain",
       "targets": [
-        ["linkText=Аудиокниги", "linkText"],
-        ["css=.LowerMenu-module__item:nth-child(5) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Аудиокниги')]", "xpath:link"],
-        ["xpath=//div[@id='litres_header']/header/nav/div/div[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/chto-slushat/')]", "xpath:href"],
-        ["xpath=//div[5]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Аудиокниги')]", "xpath:innerText"]
+        ["css=.Banners-module__bannerMain", "css:finder"],
+        ["xpath=//div[@id='litres_header']/header/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/abonement/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "4b1522b4-9c58-41e5-94e2-f5a61044d17a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],
   "suites": [{
-    "id": "e8b1f672-dbfe-453e-a8cf-d31ea9f15b25",
+    "id": "17bb9e57-6758-4529-8e64-76baa5c5fe3d",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["25ac3e88-9237-4d72-a9ec-ad2a2fe7c732"]
+    "tests": []
   }],
   "urls": ["https://www.litres.ru/"],
   "plugins": []

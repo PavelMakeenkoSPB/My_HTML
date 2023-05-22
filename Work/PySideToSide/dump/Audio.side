@@ -58,7 +58,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["25ac3e88-9237-4d72-a9ec-ad2a2fe7c732"]
+    "tests": []
   }],
   "urls": ["https://www.litres.ru/"],
   "plugins": []

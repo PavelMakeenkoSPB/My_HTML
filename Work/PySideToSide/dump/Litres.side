@@ -1,64 +1,16 @@
 {
-  "id": "a10a30b1-32d2-49d8-a2cb-cb7467284cef",
+  "id": "e643da0d-6af5-492e-8a6b-9fc0abae3dd9",
   "version": "2.0",
-  "name": "Litres",
+  "name": "2litres",
   "url": "https://www.litres.ru",
   "tests": [{
-    "id": "72ef7ebd-5674-4945-8fbd-8c2089671965",
-    "name": "Novinki",
+    "id": "39b0ef6e-f970-486a-a781-fd454720da4c",
+    "name": "Popular",
     "commands": [{
-      "id": "2ab82076-cebc-4809-a20c-161490c4457b",
+      "id": "06ca2b6f-6c89-4152-b97b-7030e7ccd527",
       "comment": "",
       "command": "open",
       "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4d9f536a-4e1f-4441-94dd-412cfab87b8e",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1642x1020",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ddd9b4e4-8856-41eb-a1e8-6793e230a54e",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "linkText=Новинки",
-      "targets": [
-        ["linkText=Новинки", "linkText"],
-        ["css=.LowerMenu-module__item_3QP99:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
-        ["xpath=//div[@id='__next']/div/header/nav/div/div[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/novie/')]", "xpath:href"],
-        ["xpath=//div/div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Новинки')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5f473031-22a5-40ba-a0c4-ae429e887876",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Новинки",
-      "targets": [
-        ["linkText=Новинки", "linkText"],
-        ["css=.LowerMenu-module__item_3QP99:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
-        ["xpath=//div[@id='__next']/div/header/nav/div/div[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/novie/')]", "xpath:href"],
-        ["xpath=//div/div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Новинки')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }]
-  }, {
-    "id": "0b8c43ed-bdfa-442a-841c-e19dd974217f",
-    "name": "Popular",
-    "commands": [{
-      "id": "70cb7c32-345f-4527-aeec-5521f2037628",
-      "comment": "",
-      "command": "run",
-      "target": "Popular",
       "targets": [],
       "value": ""
     }, {
@@ -114,6 +66,98 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "fa43760e-562a-4422-a507-844bcdc6695e",
+    "name": "Podbor",
+    "commands": [{
+      "id": "36cf1b1c-7f40-45ba-9979-a9ce619ed118",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1accea98-faef-4195-9a9e-8b5a548b7b6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca83fed8-2a78-411d-81f5-cbd5b77b2659",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подборки",
+      "targets": [
+        ["linkText=Подборки", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подборки')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/podborki/')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подборки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd6c911a-f887-47a0-bc9e-4fa1f9fafb55",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b577342-b56e-4b3d-a2de-92659a73f08b",
+    "name": "Samizdat",
+    "commands": [{
+      "id": "ccb120ef-6246-4f73-aa7a-50b9c34a224c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70d11088-91ee-42ef-a8ec-6c166d512f72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1642x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c4cc4d2-52ce-448f-9b59-1c1dabe9bf09",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Самиздат",
+      "targets": [
+        ["linkText=Самиздат", "linkText"],
+        ["css=.LowerMenu-module__item_3QP99:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Самиздат')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/header/nav/div/div[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/selfpublishing/')]", "xpath:href"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Самиздат')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73986a98-4649-4eee-912f-fae18da47167",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Banners-module__bannerMain",
+      "targets": [
+        ["css=.Banners-module__bannerMain", "css:finder"],
+        ["xpath=//div[@id='litres_header']/header/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/abonement/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b1522b4-9c58-41e5-94e2-f5a61044d17a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "17bb9e57-6758-4529-8e64-76baa5c5fe3d",
@@ -121,7 +165,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["39b0ef6e-f970-486a-a781-fd454720da4c"]
+    "tests": []
   }],
   "urls": ["https://www.litres.ru/"],
   "plugins": []

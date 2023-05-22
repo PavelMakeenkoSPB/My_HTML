@@ -1,6 +1,0 @@
-{
-  "id": "a10a30b1-32d2-49d8-a2cb-cb7467284cef",
-  "version": "2.0",
-  "name": "Litres",
-  "url": "https://www.litres.ru",
-  "tests": [

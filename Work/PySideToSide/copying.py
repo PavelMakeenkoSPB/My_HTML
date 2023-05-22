@@ -2,30 +2,31 @@ import os
 import shutil
 from sys import argv
 
-def HeadStep():
+def StepsAStepsB():
     
-    head = open('Head.txt', 'a+')
+    stA = open('StepsA.txt', 'a+')
 
-    steps = open("Steps.txt", 'r')
+    stB = open("StepsB.txt", 'r')
+    #stB = stB + ']' + ','
 
-    head.write(steps.read())
+    stA.write(stB.read())
 
-    head.close()
-    steps.close()
+    stA.close()
+    stB.close()
 
 
-def HeadFlat():
-    head = open('Head.txt', 'a+')
+def StepsAFlat():
+    stA = open('StepsA.txt', 'a+')
 
     flat = open("Flat.txt", 'r')
 
-    head.write(flat.read())
+    stA.write(flat.read())
 
-    head.close()
+    stA.close()
     flat.close()
 
 def Main():
-    HeadStep()
-    HeadFlat()
+    StepsAStepsB()
+    StepsAFlat()
 
 Main()
