@@ -1,0 +1,12 @@
+],
+  "suites": [{
+    "id": "17bb9e57-6758-4529-8e64-76baa5c5fe3d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39b0ef6e-f970-486a-a781-fd454720da4c"]
+  }],
+  "urls": ["https://www.litres.ru/"],
+  "plugins": []
+}
