@@ -63,27 +63,6 @@ cd %wind%
 dir
 GOTO end
 
-REM Просмотр текущей папки с bat файлом
-:batFileDir
-set current=/d "%~dp0"
-cd %current% 
-dir
-GOTO end
-
-REM Просмотр указанной папки 
-:yourDir
-echo __________________________________________________________________________________
-set /p yourDirictory="Введите путь к желаемой папке, например: C:\Windows\, или 4 для вывода Меню ===> "
-IF EXIST "%yourDirictory%" (
-	cd %yourDirictory%
-	dir
-	GOTO cmdLine
-) ELSE IF %yourDirictory%==4 (
-	GOTO mainMenu
-) ELSE (
-	echo По указанному адресу ничего не найдено :(
-	GOTO yourDir)
-
 REM Сообщение об ошибке и выход
 :error
 echo ___________________________________________________________

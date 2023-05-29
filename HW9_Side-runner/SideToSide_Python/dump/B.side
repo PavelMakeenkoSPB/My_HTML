@@ -1034,7 +1034,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["f75b97df-7572-4887-b3e9-ddaa889a6749", "c3e0f43d-fda2-41b0-8a18-74938e73aa43", "89e2dcc4-2d3f-42f5-8313-1cb0a6cce2e6", "ebcb5949-79d0-43f2-9a33-2d1f7ed5d868", "9390b5c9-1439-426a-8200-1a9be1862bd3", "b7df8392-9b74-4a12-a0a7-9da91f3ee641", "21c5ea8d-5844-4b83-9d48-5fe78d40405f"]
+    "tests": []
   }],
   "urls": ["https://www.moscow-restaurants.ru/"],
   "plugins": []
