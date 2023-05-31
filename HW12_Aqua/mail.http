@@ -1,0 +1,5 @@
+GET http://localhost:80/api/item?id=99
+Accept: application/json
+
+###
+GET https://gmail.googleapis.com/gmail/v1/users/pavelmakeenko178@dmail.com/messages/

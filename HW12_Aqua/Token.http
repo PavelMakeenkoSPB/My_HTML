@@ -1,0 +1,14 @@
+### Authorization by token, part 1. Retrieve and save token.
+POST https://accounts.google.com/o/oauth2/token
+Content-Type: application/json
+
+{
+
+}
+
+### Authorization by token, part 2. Use token to authorize.
+GET https://accounts.google.com/o/oauth2/auth
+Authorization: Bearer {{auth_token}}
+
+###
+GET https://gmail.googleapis.com/gmail/v1/users/pavelmakeenko178@gmail.com/messages/
