@@ -2,7 +2,7 @@
 1681232898976	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52998" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileD2ovHA"
 1681232900842	Marionette	INFO	Marionette enabled
 1681232900862	Marionette	INFO	Listening on port 53013
-Read port: 53013
+Read port: 53014
 WebDriver BiDi listening on ws://127.0.0.1:52998
 1681232901122	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\T33C6~1.STU\\AppData\\Local\\Temp\\rust_mozprofileD2ovHA\\search.json.mozlz4", (void 0)))
