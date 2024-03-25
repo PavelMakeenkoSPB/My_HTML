@@ -21,7 +21,7 @@ browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=3')
 # buttonS = find_element(By.XPATH,"//button[contains(text(),'Найти')]").click()
 # time.sleep(20)
 # time.sleep(5)
-waitingPage = wait.until(element_located((By.XPATH, '//span[contains(text(),"Продолжить")]')))
+# waitingPage = wait.until(element_located((By.XPATH, '//span[contains(text(),"Продолжить")]')))
 with_pass = find_element(By.XPATH, "//button[contains(text(),'Войти с паролем')]").click()
 # tap = find_element(By.XPATH,'//span[contains(text(),"Продолжить")]').click()
 login = find_element(By.XPATH, "//input[@placeholder='Электронная почта или телефон']").send_keys('ptg@bk.ru')
@@ -30,18 +30,33 @@ entering = find_element(By.XPATH, "//span[contains(text(),'Войти')]").click
 time.sleep(1)
 
 
-arr = []
-for i in range(1, 20):
-    st = str(i)
-    xpath_Upd = "(" + "//button [contains (@data-qa,'favorite_true_narrow') ] )" + "[" + st + "]"
-    arr.append(xpath_Upd)
+# wait.until(element_located((By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")))
+# cl = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")
+# browser.implicitly_wait(2)
+# cl.click()
+
+# WebDriverWait(browser, 2).until(EC.presence_of_all_elements_located)
+element = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [1]")
+browser.implicitly_wait(1)
+actions.move_to_element(element).click(element).double_click(element).perform()
 
 
-for k in range(1,20):
-   test =  find_element(By.XPATH, arr[k]).click()
-   print(test)
+# arr = []
+# for i in range(1, 20):
+#     st = str(i)
+#     xpath_Upd = "(" + "//button [contains (@data-qa,'favorite_true_narrow') ] )" + "[" + st + "]"
+#     arr.append(xpath_Upd)
+# #
+# #
+# for k in range(len(arr)):
+#    test =  find_element(By.XPATH, arr[k])
+#    browser.implicitly_wait(1)
+#    actions.move_to_element(test).click(test)
+#    actions.perform()
 
-time.sleep(10)
+time.sleep(5)
+
+
 # arr = []
 # for i in range(1, 58):
 #     st = str(i)
