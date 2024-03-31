@@ -3,9 +3,9 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 options = webdriver.ChromeOptions()
 browser = webdriver.Chrome()
@@ -29,6 +29,15 @@ pas = find_element(By.XPATH, "//input[@placeholder='Пароль']").send_keys('
 entering = find_element(By.XPATH, "//span[contains(text(),'Войти')]").click()
 time.sleep(1)
 
+# element = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [1]")
+#
+#
+# # Прокрутить до элемента
+# browser.execute_script("arguments[0].scrollIntoView();", element)
+#
+# # Нажать на элемент с помощью JavaScript
+# browser.execute_script("arguments[0].click();", element)
+
 
 # wait.until(element_located((By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")))
 # cl = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")
@@ -36,25 +45,38 @@ time.sleep(1)
 # cl.click()
 
 # WebDriverWait(browser, 2).until(EC.presence_of_all_elements_located)
-element = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [1]")
-browser.implicitly_wait(1)
-actions.move_to_element(element).click(element).double_click(element).perform()
+# element = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [1]").click()
+# browser.implicitly_wait(1)
+# actions.move_to_element(element).click(element).double_click(element).perform()
 
 
-# arr = []
-# for i in range(1, 20):
-#     st = str(i)
-#     xpath_Upd = "(" + "//button [contains (@data-qa,'favorite_true_narrow') ] )" + "[" + st + "]"
-#     arr.append(xpath_Upd)
+arr = []
+elo = []
+for i in range(1, 21):
+    st = str(i)
+    xpath_Upd = '"' + "(" + "//button [contains (@data-qa,'favorite_true_narrow') ] )" + "[" + st + "]" + '"'
+    arr.append(xpath_Upd)
+    elementos = 'find_element(By.XPATH,' + f'{xpath_Upd}'+')'
+    elo.append(elementos)
+    # print (elemento)
+
+
 # #
-# #
-# for k in range(len(arr)):
-#    test =  find_element(By.XPATH, arr[k])
-#    browser.implicitly_wait(1)
-#    actions.move_to_element(test).click(test)
-#    actions.perform()
+for k in range(0, 20, 1):
+#
+#     # print (arr[k])
+#
+    # element = find_element(By.XPATH, (f'{arr[k]}'))
+#     print (element)
+    tap = elo[k]
+    print (tap)
+    browser.implicitly_wait(1)
+    browser.execute_script("arguments[0].scrollIntoView();", tap)
+    browser.implicitly_wait(1)
+    browser.execute_script("arguments[0].click();", tap)
+print('All Favs was clicked')
 
-time.sleep(5)
+time.sleep(2)
 
 
 # arr = []
