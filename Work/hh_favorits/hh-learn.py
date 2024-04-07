@@ -17,124 +17,122 @@ find_element = browser.find_element
 browser.maximize_window()
 browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=3')
 
-# waitingPage = wait.until(element_located((By.XPATH,"//input[@id='text']"))).send_keys('beer')
-# buttonS = find_element(By.XPATH,"//button[contains(text(),'Найти')]").click()
-# time.sleep(20)
-# time.sleep(5)
-# waitingPage = wait.until(element_located((By.XPATH, '//span[contains(text(),"Продолжить")]')))
+
 with_pass = find_element(By.XPATH, "//button[contains(text(),'Войти с паролем')]").click()
-# tap = find_element(By.XPATH,'//span[contains(text(),"Продолжить")]').click()
+
 login = find_element(By.XPATH, "//input[@placeholder='Электронная почта или телефон']").send_keys('ptg@bk.ru')
 pas = find_element(By.XPATH, "//input[@placeholder='Пароль']").send_keys('3ebb8Ye5')
 entering = find_element(By.XPATH, "//span[contains(text(),'Войти')]").click()
 time.sleep(1)
 
-find_all = browser.find_elements(By.XPATH,"(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] )")
-kol_vo = len(find_all)
+def unfavor():
+    element1 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [1]")
+    # Прокрутить до элемента
+    browser.execute_script("arguments[0].scrollIntoView();", element1)
+    #
+    # # Нажать на элемент с помощью JavaScript
+    browser.execute_script("arguments[0].click();", element1)
+    print('Fav_1 -untapped')
 
-mass =[]
-for i in range(1, kol_vo + 1, 1):
-    st = str(i)
-    xpath_Upd = '"' + "(" + "//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] )" + "[" + st + "]" + '"'
-    mass.append(xpath_Upd)
+    time.sleep(1)
+    element2 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [2]")
+    #
+    # # Прокрутить до элемента
+    browser.execute_script("arguments[0].scrollIntoView();", element2)
+    #
+    # # Нажать на элемент с помощью JavaScript
+    browser.execute_script("arguments[0].click();", element2)
+    print('Fav_2 -untapped')
+    time.sleep(1)
+    element3 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [3]")
+    browser.execute_script("arguments[0].scrollIntoView();", element3)
+    browser.execute_script("arguments[0].click();", element3)
+    print('Fav_3 -untapped')
+    time.sleep(1)
+    element4 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [4]")
+    browser.execute_script("arguments[0].scrollIntoView();", element4)
+    browser.execute_script("arguments[0].click();", element4)
+    print('Fav_4 -untapped')
+    time.sleep(1)
+    element5 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [5]")
+    browser.execute_script("arguments[0].scrollIntoView();", element5)
+    browser.execute_script("arguments[0].click();", element5)
+    print('Fav_5 -untapped')
+    time.sleep(1)
+    element6 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [6]")
+    browser.execute_script("arguments[0].scrollIntoView();", element6)
+    browser.execute_script("arguments[0].click();", element6)
+    print('Fav_6 -untapped')
+    time.sleep(1)
+    element7 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [7]")
+    browser.execute_script("arguments[0].scrollIntoView();", element7)
+    browser.execute_script("arguments[0].click();", element7)
+    print('Fav_7 -untapped')
+    time.sleep(1)
+    element8 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [8]")
+    browser.execute_script("arguments[0].scrollIntoView();", element8)
+    browser.execute_script("arguments[0].click();", element8)
+    print('Fav_8 -untapped')
+    time.sleep(1)
+    element9 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [9]")
+    browser.execute_script("arguments[0].scrollIntoView();", element9)
+    browser.execute_script("arguments[0].click();", element9)
+    print('Fav_9 -untapped')
+    time.sleep(1)
+    element10 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [10]")
+    browser.execute_script("arguments[0].scrollIntoView();", element10)
+    browser.execute_script("arguments[0].click();", element10)
+    print('Fav_10 -untapped')
+    time.sleep(1)
 
-for r in range(0, 20, 1):
-    # element = find_element(By.XPATH, mass[r])
-    element =  mass[r]
-    print(element)
-#     browser.execute_script("arguments[0].scrollIntoView();", element)
-#     browser.execute_script("arguments[0].click();", element)
-# print('Fav_20 -untapped')
 
+unfavor()
+print('Page 3 Done')
 
-
-# Это всё работает
-# element = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [1]")
-# #
-# # # Прокрутить до элемента
-# browser.execute_script("arguments[0].scrollIntoView();", element)
-# #
-# # # Нажать на элемент с помощью JavaScript
-# browser.execute_script("arguments[0].click();", element)
-# print('Fav_1 -untapped')
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=4')
+unfavor()
+print('Page 4 Done')
 #
-#
-# element2 = find_element(By.XPATH, "(//button [contains (@data-qa,'vacancy-search-mark-favorite_true') ] ) [2]")
-# #
-# # # Прокрутить до элемента
-# browser.execute_script("arguments[0].scrollIntoView();", element2)
-# #
-# # # Нажать на элемент с помощью JavaScript
-# browser.execute_script("arguments[0].click();", element2)
-# print('Fav_2 -untapped')
-# Вот до сюда работает
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=5')
+unfavor()
+print('Page 5 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=6')
+unfavor()
+print('Page 6 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=7')
+unfavor()
+print('Page 7 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=8')
+unfavor()
+print('Page 8 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=9')
+unfavor()
+print('Page 9 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=10')
+unfavor()
+print('Page 10 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=11')
+unfavor()
+print('Page 11 Done')
 
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=12')
+unfavor()
+print('Page 12 Done')
 
-# wait.until(element_located((By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")))
-# cl = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [2]")
-# browser.implicitly_wait(2)
-# cl.click()
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=13')
+unfavor()
+print('Page 13 Done')
 
-# WebDriverWait(browser, 2).until(EC.presence_of_all_elements_located)
-# element = find_element(By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [1]").click()
-# browser.implicitly_wait(1)
-# actions.move_to_element(element).click(element).double_click(element).perform()
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=14')
+unfavor()
+print('Page 14 Done')
 
-
-
-
-
-
-# arr = []
-# elo = []
-# for i in range(1, 21):
-#     st = str(i)
-#     xpath_Upd = '"' + "(" + "//button [contains (@data-qa,'favorite_true_narrow') ] )" + "[" + st + "]" + '"'
-#     arr.append(xpath_Upd)
-#     elementos = 'find_element(By.XPATH,' + f'{xpath_Upd}'+')'
-#     elo.append(elementos)
-#     # print (elemento)
-#
-#
-# # #
-# for k in range(0, 20, 1):
-# #
-# #     # print (arr[k])
-# #
-#     # element = find_element(By.XPATH, (f'{arr[k]}'))
-# #     print (element)
-#     tap = elo[k]
-#     print (tap)
-#     browser.implicitly_wait(1)
-#     browser.execute_script("arguments[0].scrollIntoView();", tap)
-#     browser.implicitly_wait(1)
-#     browser.execute_script("arguments[0].click();", tap)
-# print('All Favs was clicked')
-#
-# time.sleep(2)
-
-
-# arr = []
-# for i in range(1, 58):
-#     st = str(i)
-#     xpathUpdate = "(" + '//img[contains(@src, "material-picture.png")]' + ')' + '[' + st + "]"
-#     arr.append(xpathUpdate)
-#
-# time.sleep(2)
-# for k in range(len(arr)):
-#     downloadMat = browser.find_element(By.XPATH, arr[k]).click()
-
-
-# fav = find_element(By.XPATH, "//span[contains(text(),'В начало')]").click()
-# row4 = find_element(By.XPATH, "//span[contains(text(),'3')]").click()
-
-# (//button [contains (@data-qa,'favorite_true_narrow') ] ) [4]
-#
-# for i in range(1,20,1):
-#     find_element (By.XPATH, "(//button [contains (@data-qa,'favorite_true_narrow') ] ) [i]" ).click()
+browser.get('https://spb.hh.ru/applicant/favorite_vacancies?page=15')
+unfavor()
+print('Page 15 Done')
